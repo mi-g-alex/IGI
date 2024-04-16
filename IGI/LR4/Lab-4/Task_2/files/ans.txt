@@ -1,0 +1,7 @@
+Sentence count: 2
+Sentence count by type [. ! ?]: (2, 0, 0)
+Average sentence len: 70.0
+Average word len: 8.235294117647058
+Smile count: 0
+Print all words that include combination of uppercase letters and numbers: ['Afadf153erqefadf']Is good password Afadf153erqefadf True
+Not capital letters words 10
