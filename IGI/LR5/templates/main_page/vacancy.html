@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>It is page with vacancies</h1>
+    {% for vacancy in vacancies %}
+        <h1>{{ vacancy.position.name }}</h1>
+        <h4>What to do: {{ vacancy.position.info }}</h4>
+        <h5>Salary: {{ vacancy.salary }}$</h5>
+    {% endfor %}
+{% endblock %}

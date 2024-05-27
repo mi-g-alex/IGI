@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Active promos</h1>
+    {% for i in active_promos %}
+        <h1>{{ i.name }}</h1>
+        <h2>Discount {{ i.discount }}%</h2>
+        <h3>From {{ i.first_date }} To {{ i.last_date }}</h3>
+    {% endfor %}
+    <br><br>
+    <h1>Feature promos</h1>
+    {% for i in future_promos %}
+        <h1>{{ i.name }}</h1>
+        <h2>Discount {{ i.discount }}%</h2>
+        <h3>From {{ i.first_date }} To {{ i.last_date }}</h3>
+    {% endfor %}
+    <br><br>
+    <h1>Archived promos</h1>
+    {% for i in archive_promos %}
+        <h1>{{ i.name }}</h1>
+        <h2>Discount {{ i.discount }}%</h2>
+        <h3>From {{ i.first_date }} To {{ i.last_date }}</h3>
+    {% endfor %}
+{% endblock %}

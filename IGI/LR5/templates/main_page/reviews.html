@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>It is page with reviews</h1>
+    <button><a href='{% url 'zoo:new_review' %}'>New Review</a></button>
+    {% for i in reviews %}
+        <h1>{{ i.user.username }}</h1>
+        <h2>Rating: {{ i.rating }}</h2>
+        <h2>{{ i.text }}</h2>
+        <h5>{{ i.date }} by {{ i.user.user.username }}  </h5>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Employees List</h1>
+
+    {% for employee in employees %}
+        <h1><a href="{% url 'zoo:superuser_employee_details' employee.pk %}">{{ employee.name }}</a></h1>
+    {% endfor %}
+{% endblock %}

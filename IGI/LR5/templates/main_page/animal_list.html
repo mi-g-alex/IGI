@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+    <style>
+        .filter-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .filter-form .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-form button {
+            align-self: center;
+        }
+    </style>
+    <h1>Animal List</h1>
+
+    <form method="get" class="filter-form">
+        <div class="form-group">
+            <label for="id_name">Name:</label>
+            {{ form.name }}
+        </div>
+        <div class="form-group">
+            <label for="id_family">Family:</label>
+            {{ form.family }}
+        </div>
+        <div class="form-group">
+            <label for="id_countries">Countries:</label>
+            {{ form.countries }}
+        </div>
+        <div class="form-group">
+            <label for="id_countries">Place:</label>
+            {{ form.place }}
+        </div>
+        <div class="form-group">
+            <label for="id_sort_by">Sort by:</label>
+            {{ form.sort_by }}
+        </div>
+        <button type="submit">Filter</button>
+    </form>
+
+    {% for animal in animals %}
+        <h2>{{ animal.name }}</h2>
+        <img src="{{ animal.photo.url }}" alt="{{ animal.name }}" width="10%">
+        <p>Family: {{ animal.view.family.name }}</p>
+        <p>Countries:
+            {% for country in animal.counties.all %}
+                {{ country.name }}{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+        <p>Facts: {{ animal.facts }}</p>
+        <br>
+    {% endfor %}
+{% endblock %}

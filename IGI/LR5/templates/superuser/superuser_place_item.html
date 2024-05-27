@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ place.name }}</h1>
+    <ul>
+        <li><h2>Quarter: {{ place.quarter.name }}</h2></li>
+        <li><h2>Has swimming: {{ place.has_swimming }}</h2></li>
+        <li><h2>Has heating: {{ place.has_heating }}</h2></li>
+        <li><h2>Square: {{ place.square }}m2</h2></li>
+    </ul>
+{% endblock %}

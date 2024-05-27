@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+    <img src="{{ animal.photo.url }}" alt="{{ animal.title }}" width="30%"/>
+    <h1>{{ animal.name }}</h1>
+    <h2>Receipt Date: {{ animal.receipt_date }}</h2>
+    <h2>Place: {{ animal.place.name }} - {{ animal.place.number }}</h2>
+    `<ul>
+        <li>Quarter: {{ animal.place.quarter.name }}</li>
+        <li>Has swimming: {{ animal.place.has_swimming }}</li>
+        <li>Has heating: {{ animal.place.has_heating }}</li>
+        <li>Square: {{ animal.place.square }}m2</li>
+    </ul>`
+    <h2>Birthday: {{ animal.birthday }}</h2>
+    <h2>Food: </h2>
+    <ul>
+        {% for food in animal.food.all %}
+            <li>{{ food.food_name }}
+                <ul>
+                    <li>Portion: {{ food.potion }}</li>
+                    <li>Time: {{ food.time }}</li>
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+    <h2>View: {{ animal.view.name }} - {{ animal.view.family.name }}</h2>
+    <h2>Parameters</h2>
+    <ul>
+        <li>Weight: {{ animal.parameters.weight }}kg</li>
+        <li>Length: {{ animal.parameters.length }}m</li>
+        <li>Width: {{ animal.parameters.width }}m</li>
+        <li>Height: {{ animal.parameters.height }}m</li>
+    </ul>
+    <h2>Facts: </h2>
+    <h3>{{ animal.facts }}</h3>
+    <h2>Countries</h2>
+    <ul>
+        {% for county in animal.counties.all %}
+            <li>{{ county.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
