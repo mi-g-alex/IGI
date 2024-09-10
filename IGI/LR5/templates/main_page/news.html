@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load first_sentence %}
+{% block content %}
+    <h1>News</h1>
+    {% for i in all_news %}
+        <h1><a href="{% url 'zoo:news_detail' i.pk %}">{{ i.title }}</a></h1>
+        <img src="{{ i.photo.url }}" alt="{{ i.title }}" width="10%"/>
+        <div>{{ i.text|first_sentence }}</div>
+    {% endfor %}
+{% endblock %}

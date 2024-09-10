@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load first_sentence %}
+{% load my_calendar %}
+{% block content %}
+    <h1>Zoo</h1>
+    <h4>Last new:</h4>
+    <h5><a href="{% url 'zoo:news_detail' new.pk %}">{{ new.title }}</a></h5>
+    <img src="{{ new.photo.url }}" alt="{{ new.title }}" width="10%"/>
+    <div>{{ new.text|first_sentence }}</div>
+    
+    <h1>Fact about cat:</h1>
+    <h3>{{ fact }}</h3>
+{% endblock %}

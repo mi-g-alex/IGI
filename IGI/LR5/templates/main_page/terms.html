@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Terms</h1>
+    {% for term in terms %}
+        <h2>{{ term.title }} - {{ term.info }}</h2>
+    {% endfor %}
+{% endblock %}

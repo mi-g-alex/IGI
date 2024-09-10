@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <img src="{{ employee.photo.url }}" alt="{{ employee.name }}" width="20%">
+    <h1>{{ employee.name }}</h1>
+    <h2>Joke age: {{ age }}</h2>
+    <h2><a href="tel:{{ employee.phone }}">{{ employee.phone }}</a></h2>
+    <h2><a href="mailto:{{ employee.mail }}">{{ employee.mail }}</a></h2>
+    <h3>{{ employee.info }}</h3>
+    <ul>
+    <h2>Places</h2>
+        {% for place in places %}
+        <li>
+            <h4><a href="{% url 'zoo:superuser_place_details' place.pk %}">{{ place.name }} - {{ place.number }}
+                - {{ place.quarter.name }}</a></h4>
+        </li>
+    {% endfor %}
+    </ul>
+    
+{% endblock %}

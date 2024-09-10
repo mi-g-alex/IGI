@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoo</title>
+</head>
+<script>
+    function updateTime() {
+        const now = new Date();
+        const timeOptions = {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false
+        };
+        const timeString = now.toLocaleDateString('en-US') + " " + now.toLocaleTimeString('en-US', timeOptions);
+        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+        document.getElementById('time').textContent = timeString;
+        document.getElementById('timezone').textContent = timeZone;
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
+<body>
+
+{% block top_navbar %}
+    <nav>
+        <ul>
+            <li><a href={% url 'zoo:home_page' %}>Home</a></li>
+            <li><a href={% url 'zoo:animal_list' %}>Animals</a></li>
+            <li><a href={% url 'zoo:about_page' %}>About</a></li>
+            <li><a href={% url 'zoo:news_page' %}>News</a></li>
+            <li><a href={% url 'zoo:terms_page' %}>Terms</a></li>
+            <li><a href={% url 'zoo:vacancy_page' %}>Vacancy</a></li>
+            <li><a href={% url 'zoo:policy_page' %}>Policy</a></li>
+            <li><a href={% url 'zoo:reviews_page' %}>Reviews</a></li>
+            <h1></h1>
+            {% if user.is_authenticated and not user.is_staff %}
+                <li><a href="{% url 'zoo:profile' %}">Profile</a></li>
+                <li><a href={% url 'zoo:promo_page' %}>Promo</a></li>
+                <li><a href={% url 'zoo:buy_ticket' %}>Buy ticket</a></li>
+                <li><a href={% url 'zoo:my_tickets' %}>My Tickets</a></li>
+            {% elif user.is_staff and not user.is_superuser %}
+                <li><a href={% url 'zoo:my_animals' %}>My animals</a></li>
+            {% elif user.is_superuser %}
+                <li><a href={% url 'zoo:superuser_all_animals' %}>All animals</a></li>
+                <li><a href={% url 'zoo:superuser_all_places' %}>All places</a></li>
+                <li><a href={% url 'zoo:superuser_all_employees' %}>All employees</a></li>
+                <li><a href={% url 'zoo:superuser_chart' %}>Chart</a></li>
+            {% else %}
+                <li><a href="{% url 'zoo:auth_login' %}">Login</a></li>
+                <li><a href="{% url 'zoo:auth_registration' %}">Register</a></li>
+            {% endif %}
+            {% if user.is_authenticated %}
+                <form method="post" action="{% url 'zoo:auth_logout' %}">
+                    {% csrf_token %}
+                    <button type="submit">Logout</button>
+                </form>
+            {% endif %}
+        </ul>
+    </nav>
+
+{% endblock %}
+
+{% block content %}{% endblock %}
+{% load my_calendar %}
+{% block footer %}
+    <footer>
+        <h4>Made with Django by Alexander Gorgun</h4>
+        <div id="time"></div>
+        <div id="timezone"></div>
+        <br>
+        {% autoescape off %}
+            <div>{{ ''|my_calendar }}</div>
+        {% endautoescape %}
+    </footer>
+{% endblock %}
+</body>
+</html>

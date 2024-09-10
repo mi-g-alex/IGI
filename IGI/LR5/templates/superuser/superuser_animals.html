@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>All animals</h1>
+
+    <style>
+        .filter-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+        .filter-form .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .filter-form button {
+            align-self: center;
+        }
+    </style>
+
+    <form method="get" class="filter-form">
+        <div class="form-group">
+            <label for="id_name">Name:</label>
+            {{ form.name }}
+        </div>
+        <div class="form-group">
+            <label for="id_family">View:</label>
+            {{ form.view }}
+        </div>
+        <div class="form-group">
+            <label for="id_countries">Place:</label>
+            {{ form.place }}
+        </div>
+        <div class="form-group">
+            <label for="id_food">Food:</label>
+            {{ form.food }}
+        </div>
+        <div class="form-group">
+            <label for="id_recently">Show recently added animals:</label>
+            {{ form.recently }}
+        </div>
+        <button type="submit">Filter</button>
+    </form>
+
+    <h1>Count: {{ count }}</h1>
+
+    {% for animal in animals %}
+        <h2><a href="{% url 'zoo:my_animal_detail' animal.pk %}">{{ animal.name }} - {{ animal.place.name }}
+            - {{ animal.receipt_date }}</a></h2>
+    {% endfor %}
+{% endblock %}

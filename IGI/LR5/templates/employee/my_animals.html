@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>My animals</h1>
+    {% for animal in animals %}
+        <h2><a href="{% url 'zoo:my_animal_detail' animal.pk %}">{{ animal.name }} - {{ animal.place.name }}
+            - {{ animal.receipt_date }}</a></h2>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Buy ticket{% endblock %}
+
+{% block content %}
+    <h1>Buy ticket</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <div>
+            {{ form.date.label_tag }}
+            {{ form.date }}
+        </div>
+        {{ form.date.errors }}
+        <br>
+        <div>
+            {{ form.base_price.label_tag }}<br>
+            {{ form.base_price }}
+        </div>
+        <div>
+            {{ form.additions.label_tag }}<br>
+            {{ form.additions }}
+        </div>
+        <br>
+        <div>
+            {{ form.promo.label_tag }}
+            {{ form.promo }}
+        </div>
+        {{ form.promo.errors }}
+        <br>
+        <button type="submit">Buy</button>
+    </form>
+{% endblock %}

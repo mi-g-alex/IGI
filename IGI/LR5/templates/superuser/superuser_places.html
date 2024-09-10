@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Places List</h1>
+
+    {% for place in places %}
+        <h1><a href="{% url 'zoo:superuser_place_details' place.pk %}">{{ place.name }} - {{ place.number }}
+            - {{ place.quarter.name }}</a></h1>
+    {% endfor %}
+{% endblock %}

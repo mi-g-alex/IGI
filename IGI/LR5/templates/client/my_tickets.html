@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Tickets</h1>
+    {% for i in tickets %}
+        <h1>{{ i.date.day }}.{{ i.date.month }}.{{ i.date.year }} - {{ i.total_price }}$</h1>
+        <ul>
+            {% for j in i.price.all %}
+                <li>{{ j.name }} - {{ j.price }}$</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% endblock %}
