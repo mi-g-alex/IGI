@@ -14,7 +14,7 @@ models = (
     PlaceQuarter, Place,
     Position,
     Ticket, Client, Comment,
-    About, New, Price, Promo, Vacancy, Term
+    AdsBanners, Partners, About, New, Price, Promo, Vacancy, Term
 )
 
 

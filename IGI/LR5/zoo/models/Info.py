@@ -5,6 +5,20 @@ from zoo.models.BaseModel import BaseModel
 from django.db import models
 from django.utils import timezone
 
+
+class Partners(BaseModel):
+    logo = models.ImageField(upload_to='photos/partners/')
+    name = models.TextField()
+    url = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+
+class AdsBanners(BaseModel):
+    image = models.ImageField(upload_to='photos/adsBanners/')
+
+
 class About(BaseModel):
     info = models.TextField()
     logo = models.ImageField(upload_to='photos/about/')

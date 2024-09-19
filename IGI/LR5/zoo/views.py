@@ -24,7 +24,7 @@ from django.contrib import messages
 
 from zoo.forms.superuser_animal_filter import SuperUserAnimalFilterForm
 from zoo.models import New, Term, Vacancy, Promo, Comment, Ticket, Price, Animal, Employee, Place, FoodName
-from zoo.models.Info import About
+from zoo.models.Info import About, AdsBanners, Partners
 
 logger = logging.getLogger(__name__)
 
@@ -35,8 +35,15 @@ def index(request):
     response = requests.get('https://catfact.ninja/fact')
     fact = response.json()["fact"]
 
+    about_data = About.objects.last()
+    logo = about_data.logo
+    ads = AdsBanners.objects.all()
+    partners = Partners.objects.all()
+    prices = Price.objects.all()
+
     logger.info("Visit index page")
-    return render(request, 'main_page/index.html', {'new': new, 'fact': fact})
+    return render(request, 'main_page/index.html',
+                  {'new': new, 'fact': fact, 'ads': ads, 'logo': logo, 'partners': partners, 'prices': prices})
 
 
 def about(request):

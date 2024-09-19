@@ -4,4 +4,4 @@ from .Food import FoodName, Food
 from .Place import PlaceQuarter, Place
 from .Position import Position
 from .Client import Ticket, Client, Comment
-from .Info import New, Price, Promo, Vacancy, Term
+from .Info import AdsBanners, Partners, New, Price, Promo, Vacancy, Term

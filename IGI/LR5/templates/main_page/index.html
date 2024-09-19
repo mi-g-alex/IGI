@@ -3,11 +3,36 @@
 {% load my_calendar %}
 {% block content %}
     <h1>Zoo</h1>
+
+    <img src="{{ logo }}" alt="Logo"/>
+    <br>
+    <div style="display: inline">
+        {% for ad in ads %}
+            <img src="{{ ad.image }}" alt="ads" width="30%"/>
+        {% endfor %}
+    </div>
+
+    {% for price in prices %}
+        <p>{{ price.name }} - {{ price.price }}$</p>
+    {% endfor %}
+    {% if user.is_authenticated and not user.is_staff %}
+        <a href={% url 'zoo:buy_ticket' %}>Buy</a>
+    {% endif %}
+
     <h4>Last new:</h4>
     <h5><a href="{% url 'zoo:news_detail' new.pk %}">{{ new.title }}</a></h5>
     <img src="{{ new.photo.url }}" alt="{{ new.title }}" width="10%"/>
     <div>{{ new.text|first_sentence }}</div>
-    
+
     <h1>Fact about cat:</h1>
     <h3>{{ fact }}</h3>
+
+    <h3>Partners</h3>
+    <div style="display: inline">
+        {% for partner in partners %}
+            <a href="{{ partner.url }}">
+                <img src="{{ partner.logo }}" alt="{{ partner.name }}" width="10%"/>
+            </a>
+        {% endfor %}
+    </div>
 {% endblock %}
