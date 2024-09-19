@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Cart{% endblock %}
+
+{% block content %}
+    <h1>Cart</h1>
+    {% if tickets.count == 0 %}
+        <p>Cart is empty</p>
+    {% else %}
+        {% for i in tickets %}
+            <h1>{{ i.date.day }}.{{ i.date.month }}.{{ i.date.year }} - {{ i.total_price }}$ | x{{ i.count }}</h1>
+            <ul>
+                {% for j in i.price.all %}
+                    <li>{{ j.name }} - {{ j.price }}$</li>
+                {% endfor %}
+            </ul>
+            <form method="post" style="display:inline;">
+                {% csrf_token %}
+                <input type="hidden" name="ticket_id" value="{{ i.id }}">
+                {% if i.count > 0 %}
+                    <button type="submit" name="action" value="decrease">-1</button>
+                {% endif %}
+                <button type="submit" name="action" value="increase">+1</button>
+                <button type="submit" name="action" value="delete">Delete</button>
+            </form>
+            <br><br><br>
+        {% endfor %}
+
+        <form method="get" action="confirm">
+            {% csrf_token %}
+            <button type="submit" name="tickets">Pay order</button>
+        </form>
+    {% endif %}
+{% endblock %}

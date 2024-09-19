@@ -41,6 +41,7 @@
                 <li><a href="{% url 'zoo:profile' %}">Profile</a></li>
                 <li><a href={% url 'zoo:promo_page' %}>Promo</a></li>
                 <li><a href={% url 'zoo:buy_ticket' %}>Buy ticket</a></li>
+                <li><a href={% url 'zoo:cart' %}>Cart</a></li>
                 <li><a href={% url 'zoo:my_tickets' %}>My Tickets</a></li>
             {% elif user.is_staff and not user.is_superuser %}
                 <li><a href={% url 'zoo:my_animals' %}>My animals</a></li>

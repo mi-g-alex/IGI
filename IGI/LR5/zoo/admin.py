@@ -3,6 +3,7 @@ from django.contrib.auth.admin import UserAdmin as BUA
 from django.contrib.auth.models import User
 
 from .models import *
+from .models.Info import About
 
 # Register your models here.
 
@@ -13,7 +14,7 @@ models = (
     PlaceQuarter, Place,
     Position,
     Ticket, Client, Comment,
-    New, Price, Promo, Vacancy, Term
+    About, New, Price, Promo, Vacancy, Term
 )
 
 

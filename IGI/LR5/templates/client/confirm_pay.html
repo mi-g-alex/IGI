@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Cart{% endblock %}
+
+{% block content %}
+
+
+    <div class="form-container">
+
+        <h1>Confirm pay</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="card_number">Card number</label>
+                <input type="text" id="card_number" name="card_number" placeholder="1234 5678 9123 4567" maxlength="16"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="expiration_date">Expired time</label>
+                <div style="display: inline">
+                    <input type="text" id="expiration_date" name="expiration_date" placeholder="MM" maxlength="2"
+                           required>
+                    <input type="text" id="expiration_date" name="expiration_date" placeholder="YY" maxlength="2"
+                           required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+            </div>
+            <p>Total: {{ total_price }}$</p>
+            <br>
+            <button type="submit">Buy</button>
+        </form>
+    </div>
+{% endblock %}

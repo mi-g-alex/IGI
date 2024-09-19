@@ -9,6 +9,7 @@ app_name = "zoo"
 urlpatterns = [
     path('', views.index, name='home_page'),
     re_path(r'^about/?$', views.about, name='about_page'),
+    re_path(r'^cert/?$', views.certificate, name='cert'),
     re_path(r'^news/?$', views.news, name='news_page'),
     path('news/<int:pk>', views.news_detail, name='news_detail'),
     re_path(r'^terms/?$', views.terms, name='terms_page'),
@@ -25,6 +26,8 @@ urlpatterns = [
     re_path(r'^profile/?$', views.profile, name='profile'),
     re_path(r'^create_review/?$', views.create_comment, name='new_review'),
     re_path(r'^buy_ticket/?$', views.buy_ticket, name='buy_ticket'),
+    re_path(r'^cart/?$', views.my_cart, name='cart'),
+    re_path(r'^confirm/?$', views.confirm_pay, name='confirm'),
     re_path(r'^my_tickets/?$', views.my_tickets, name='my_tickets'),
 
     re_path(r'^my_animals/?$', views.my_animals, name='my_animals'),

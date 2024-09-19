@@ -8,6 +8,7 @@ import requests
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import AnonymousUser
 from django.contrib.auth.views import LoginView
 from django.utils import timezone
 from datetime import timedelta
@@ -23,6 +24,7 @@ from django.contrib import messages
 
 from zoo.forms.superuser_animal_filter import SuperUserAnimalFilterForm
 from zoo.models import New, Term, Vacancy, Promo, Comment, Ticket, Price, Animal, Employee, Place, FoodName
+from zoo.models.Info import About
 
 logger = logging.getLogger(__name__)
 
@@ -39,7 +41,24 @@ def index(request):
 
 def about(request):
     logger.info("Visit about page")
-    return render(request, 'main_page/about.html')
+    about_data = About.objects.last()
+    text = about_data.info
+    logo = about_data.logo
+    video = about_data.video
+    year_history = about_data.year_history
+    return render(request, 'main_page/about.html',
+                  {'text': text, 'logo': logo, 'video': video, 'year_history': year_history})
+
+
+def certificate(request):
+    view = About.objects.last().certificate
+    response = render(
+        request,
+        "main_page/cert.html",
+        context={'view': view}
+    )
+    response['X-Frame-Options'] = 'SAMEORIGIN'
+    return response
 
 
 def news(request):
@@ -99,7 +118,7 @@ def reviews(request):
 
 
 def register(request):
-    if request.user is not None:
+    if request.user.__class__ is not AnonymousUser:
         return redirect("zoo:profile")
     logger.info("Visit register page")
     if request.method == 'POST':
@@ -175,11 +194,64 @@ def buy_ticket(request):
             ticket.price.add(base_price)
             ticket.price.add(*additions)
 
-            return redirect('zoo:my_tickets')
+            return redirect('zoo:cart')
 
     form = TicketForm(request.POST)
 
     return render(request, 'client/buy_ticket.html', {'form': form})
+
+
+@login_required
+def my_cart(request):
+    client = request.user.client
+    if client is None:
+        return redirect("zoo:profile")
+
+    if request.method == "POST":
+        ticket_id = request.POST.get('ticket_id')
+        action = request.POST.get('action')
+
+        ticket = get_object_or_404(Ticket, id=ticket_id)
+        ticket.total_price /= ticket.count
+        if action == 'increase':
+            ticket.count += 1
+        elif action == 'decrease':
+            ticket.count -= 1
+        ticket.total_price *= ticket.count
+        ticket.save()
+        if action == 'delete' or ticket.count <= 0:
+            ticket.delete()
+        return redirect('zoo:cart')
+
+    tickets = Ticket.objects.filter(user=client, paid=False).all().order_by("date").reverse()
+
+    return render(request, 'client/cart.html', {'tickets': tickets})
+
+
+@login_required
+def confirm_pay(request):
+    client = request.user.client
+    if client is None:
+        return redirect("zoo:profile")
+
+    tickets = Ticket.objects.filter(user=client, paid=False).all()
+
+    if request.method == "POST":
+        card = request.POST.get('card_number')
+        expiration_date = request.POST.get('expiration_date')
+        cvv = request.POST.get('cvv')
+
+        for i in tickets:
+            i.paid = True
+            i.save()
+
+        return redirect("zoo:my_tickets")
+
+    sum_of_pay = 0
+    for q in tickets:
+        sum_of_pay += q.total_price
+
+    return render(request, 'client/confirm_pay.html', {'total_price': sum_of_pay})
 
 
 @login_required
@@ -189,7 +261,7 @@ def my_tickets(request):
     if client is None:
         return redirect("zoo:profile")
 
-    tickets = Ticket.objects.filter(user=client).all().order_by("date").reverse()
+    tickets = Ticket.objects.filter(user=client, paid=True).all().order_by("date").reverse()
     return render(request, 'client/my_tickets.html', {'tickets': tickets})
 
 

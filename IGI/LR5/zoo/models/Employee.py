@@ -14,7 +14,7 @@ class Employee(BaseModel):
     phone = PhoneNumberField()
     email = models.EmailField()
     info = models.TextField()
-    photo = models.ImageField(upload_to='photos/news/', default=None, null=True)
+    photo = models.ImageField(upload_to='photos/employees/', default=None, null=True)
     position = models.ForeignKey(Position, on_delete=models.SET_NULL, related_query_name="news", null=True)
     places = models.ManyToManyField(Place, related_query_name="employees", blank=True)
 

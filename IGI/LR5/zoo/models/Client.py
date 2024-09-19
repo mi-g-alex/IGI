@@ -18,6 +18,8 @@ class Ticket(BaseModel):
     date = models.DateTimeField(default=timezone.now)
     price = models.ManyToManyField(to=Price, related_query_name="sold_tickets")
     user = models.ForeignKey(to=Client, on_delete=models.CASCADE, related_query_name='tickets', default=None, null=True)
+    paid = models.BooleanField(default=False)
+    count = models.IntegerField(default=1)
     total_price = models.FloatField(default=0)
 
 

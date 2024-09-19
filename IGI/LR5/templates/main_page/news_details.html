@@ -5,6 +5,7 @@
     {% if news_item.photo %}
         <img src="{{ news_item.photo.url }}" alt="{{ news_item.title }}" width="20%">
     {% endif %}
-    <p>{{ news_item.text }}</p>
+
+    <pre>{{ news_item.text }}</pre>
     <a href="{% url 'zoo:news_page' %}">Back</a>
 {% endblock %}
