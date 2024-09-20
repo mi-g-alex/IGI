@@ -40,5 +40,7 @@ urlpatterns = [
     path('super/employees/<int:pk>', views.super_user_employee, name='superuser_employee_details'),
     path('super/chart', views.chart_page, name='superuser_chart'),
 
+    re_path('^tmp/?$', views.tmp, name='my_tmp'),
+
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

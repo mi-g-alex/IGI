@@ -2,6 +2,9 @@
 {% block content %}
     <h1>Terms</h1>
     {% for term in terms %}
-        <h2>{{ term.title }} - {{ term.info }}</h2>
+        <details>
+            <summary>{{ term.title }}</summary>
+            <p>{{ term.info }}</p>
+        </details>
     {% endfor %}
 {% endblock %}

@@ -438,3 +438,6 @@ def chart_page(request):
     uri = urllib.parse.quote(string)
 
     return render(request, 'superuser/chart_page.html', {'data': uri})
+
+def tmp(request):
+    return render(request, 'tmp/tmp.html')

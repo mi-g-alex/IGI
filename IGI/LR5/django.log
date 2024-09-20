@@ -2957,3 +2957,41 @@ Visit index page
 Visit index page
 C:\Users\sasha\PycharmProjects\IGI\IGI\LR5\zoo\views.py changed, reloading.
 Watching for file changes with StatReloader
+Visit index page
+Buy ticket
+Internal Server Error: /buy_ticket
+Traceback (most recent call last):
+  File "C:\Users\sasha\PycharmProjects\IGI\IGI\LR5\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasha\PycharmProjects\IGI\IGI\LR5\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasha\PycharmProjects\IGI\IGI\LR5\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasha\PycharmProjects\IGI\IGI\LR5\zoo\views.py", line 184, in buy_ticket
+    client = request.user.client
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasha\PycharmProjects\IGI\IGI\LR5\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasha\PycharmProjects\IGI\IGI\LR5\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 525, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no client.
+Visit index page
+C:\Users\sasha\PycharmProjects\IGI\IGI\LR5\zoo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /image.jpg
+Not Found: /audio.mp3
+Not Found: /video.mp4
+Not Found: /video.mp4
+Not Found: /audio.mp3
+Not Found: /favicon.ico
+Not Found: /fadfadf
+Not Found: /fadfadf
+Visit index page
+Visit news page
+Visit $1 new page
+Visit index page
+Watching for file changes with StatReloader

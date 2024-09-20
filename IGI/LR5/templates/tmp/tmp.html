@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="G_Alex">
+    <meta name="description" content="Test page"/>
+    <title>Zoo</title>
+</head>
+
+<body>
+<div id="start">Тут якорь начала</div>
+
+<h1>Листинг кода</h1>
+<pre>
+    <code>
+from django.apps import AppConfig
+
+
+class BackendConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'zoo'
+    </code>
+</pre>
+<br>
+<var>a = 3</var>
+<br>
+<samp>It is output</samp>
+<br>
+<kbd>It is user Input</kbd>
+<hr>
+<h1>Сокращения</h1>
+<ul>
+    <li>abbr</li>
+    <abbr title="Very long long long long long long long long long long long long long long long long long long long long long long long long long long long text">Very
+        long text</abbr>
+    <li>acrnym (deprecated)</li>
+    <acronym
+            title="Very long long long long long long long long long long long long long long long long long long long long long long long long long long long text">Very
+        long text
+    </acronym>
+</ul>
+
+<h1>Определения</h1>
+<dfn title="It">It</dfn> is fun
+<dl>
+    <dt>It's</dt>
+    <dd>It is</dd>
+    <dt>I'm</dt>
+    <dd>I am</dd>
+    <dt>I've</dt>
+    <dd>I have</dd>
+</dl>
+
+
+<h1>Цитаты</h1>
+<ul>
+    <li>q + cite</li>
+    <q cite="https://ya.ru/">Short quote at <cite>yandex</cite></q>
+
+    <li>cite</li>
+    <p>Book <cite>Elon Mask</cite></p>
+
+    <li>blockquote</li>
+    <blockquote>
+        Very long long long long long long long long long long long long long long long long long long quote
+    </blockquote>
+</ul>
+
+<h1>Date-Time</h1>
+<p>Lesson start at
+    <time datetime="2024-09-18 12:25">September 18</time>
+    .
+</p>
+
+<h1>Четверостишье</h1>
+<ul>
+    <li>p + br</li>
+    <p>
+        С добрым утром! Взгляни: ждет за окнами белый<br>
+        Необъезженный конь. Оседлай, если смел.<br>
+        И не дай тебе бог век печалиться целый<br>
+        От сознанья, что мог, но свершить не успел.
+    </p>
+    <li>pre</li>
+    <pre>
+Что я желал бы под шатром судеб? <wbr>Всего, что вы желали бы, того же: <wbr>Чтоб легче и дешевле стал бы хлеб, <wbr>А слово и весомей, и дороже! <wbr>Что я желал бы под шатром судеб? <wbr>Всего, что вы желали бы, того же: <wbr>Чтоб легче и дешевле стал бы хлеб, <wbr>А слово и весомей, и дороже! <wbr>
+    </pre>
+</ul>
+
+<h1>Ссылки</h1>
+<ul>
+    <li>Absolute reference</li>
+    <a href="http://localhost:8080/about/">Go to about ref</a>
+
+    <li>Relative reference</li>
+    <a href="about/">Go to about ref</a>
+
+    <li>Link to download file</li>
+    <a href="https://www.bsuir.by/m/12_100229_1_185586.pdf" download="https://www.bsuir.by/m/12_100229_1_185586.pdf">Download
+        СТП-2024</a>
+
+    <li>Якорь</li>
+    <a href="#start">Go to start</a>
+</ul>
+
+<h1>Еще один список</h1>
+<ol>
+    <li>Раз</li>
+    <li>Два</li>
+    <li>Три</li>
+</ol>
+
+<h1>Фигуры</h1>
+<figure>
+    <img src="https://avatars.mds.yandex.net/get-mpic/1669769/img_id1160932399383934012.jpeg/orig" width="20%"
+         alt="Описание изображения">
+    <figcaption>Подпись к изображению</figcaption>
+</figure>
+
+<h1>Таблица</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th id="header1" colspan="2">Info</th>
+        <th id="header2" rowspan="2">Value</th>
+    </tr>
+    <tr>
+        <th id="name">Name</th>
+        <th id="age">Age</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td headers="header1 name">Uliana</td>
+        <td headers="header1 age">25</td>
+        <td headers="header2">200</td>
+    </tr>
+    <tr>
+        <td headers="header1 name">Karolina</td>
+        <td headers="header1 age">30</td>
+        <td headers="header2">300</td>
+    </tr>
+    </tbody>
+</table>
+
+<h1>Элементы управления</h1>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+<br></br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password">
+<br></br>
+<button type="button">Tap me</button>
+<br></br>
+<label>
+    <input type="radio" name="gender" value="male"> Man
+</label>
+<label>
+    <input type="radio" name="gender" value="female"> Woman
+</label>
+<br></br>
+<label>
+    <input type="checkbox" name="subscribe"> Check me
+</label>
+<br></br>
+<label for="cars">Select auto:</label>
+<select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Ford</option>
+    <option value="mercedes">Mercedes</option>
+</select>
+<br></br>
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="4" cols="50"></textarea>
+<br></br>
+<input type="hidden" name="userid" value="12345">
+<br></br>
+<label for="date">Date:</label>
+<input type="date" id="date" name="date">
+<br></br>
+<label for="volume">Volume:</label>
+<input type="range" id="volume" name="volume" min="0" max="100">
+<br></br>
+
+<picture>
+    <source media="(max-width: 798px)"
+            srcset="https://sun9-30.userapi.com/impg/Qi42bicYP_QB8s8PT8_CJqfnDj9B2u8INQzeVg/arjl8dm7EeY.jpg?size=1200x798&quality=95&sign=26c19d8f3427a1b157248cb8bc9b8f87&c_uniq_tag=yiaW4uGYuRYZfvHWOkBBhoj7f1n9ypFWOtRuvbngX5w&type=album">
+    <source media="(min-width: 1280px)"
+            srcset="https://mig.pics/uploads/posts/2020-02/1581104116_1-p-sovremennii-dizain-chastnikh-domov-1.jpg">
+    <source media="(min-width: 1702    px)"
+            srcset="https://pr5.zoon.ru/CH5YmyRFmYW5UDtQRjNESw/2560x1702,q90/eg1zRrsxLFBUWia9GvaC0jQhBSBTBNTsSq0aME9E5rlQG6D7Te4Yk10DCLG80g2Tjv9AObRb176p0zHJHWM5M2Qml-JhU_ymvjiS6UTxznagJ6euJvnjrcCLU4mjcAN3ERMyFPKkCzc0zbuHoXRhaNvTJseQuFA90rATeN-ydJzQmKciIQyis97bT7NY75Kb28yRJUYd4DbkGDVUIWu6Pg">
+    <img src="https://pr5.zoon.ru/CH5YmyRFmYW5UDtQRjNESw/2560x1702,q90/eg1zRrsxLFBUWia9GvaC0jQhBSBTBNTsSq0aME9E5rlQG6D7Te4Yk10DCLG80g2Tjv9AObRb176p0zHJHWM5M2Qml-JhU_ymvjiS6UTxznagJ6euJvnjrcCLU4mjcAN3ERMyFPKkCzc0zbuHoXRhaNvTJseQuFA90rATeN-ydJzQmKciIQyis97bT7NY75Kb28yRJUYd4DbkGDVUIWu6Pg"
+         width="40%">
+</picture>
+<br></br>
+<video src="https://www.youtube.com/watch?v=XyBdLR0rskA" controls></video>
+<br></br>
+<audio src="https://www.youtube.com/watch?v=XyBdLR0rskA" controls></audio>
+</body>
+
+<h1>Micro data</h1>
+<div itemscope itemtype="https://schema.org/SoftwareApplication">
+    <span itemprop="name" translate="no">Angry Birds</span> - REQUIRES
+    <span itemprop="operatingSystem" translate="no">ANDROID</span><br/>
+    <link
+            itemprop="applicationCategory"
+            href="https://schema.org/SoftwareApplication"/>
+
+    <div
+            itemprop="aggregateRating"
+            itemscope
+            itemtype="https://schema.org/AggregateRating">
+        RATING:
+        <span itemprop="ratingValue">4.6</span> (
+        <span itemprop="ratingCount">8864</span> ratings )
+    </div>
+
+    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        Price: $<span itemprop="price">1.00</span>
+        <meta itemprop="priceCurrency" content="USD"/>
+    </div>
+</div>
+
+<br>
+<b>Bold</b>
+<br>
+<em>Accent italic</em>
+<br>
+<i>italic</i>
+<br>
+<s>Crossed out</s>
+<br>
+<strong>BOOOOLD and STRONG</strong>
+<br>
+<u>Underline</u>
+<br>
+Norm <small>Small <small>Smaller</small> Small</small> Norm
+<br>
+<sup><sup>Up</sup>Up</sup> or <sub>Down<sub>Down</sub></sub>
+<br>
+<mark>mark</mark>
