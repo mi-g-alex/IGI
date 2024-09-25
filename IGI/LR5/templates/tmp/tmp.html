@@ -12,6 +12,7 @@
 
 <h1>Листинг кода</h1>
 <pre>
+Код начинает тут
     <code>
 from django.apps import AppConfig
 
@@ -20,6 +21,7 @@ class BackendConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'zoo'
     </code>
+И заканчивается тут
 </pre>
 <br>
 <var>a = 3</var>
@@ -150,7 +152,9 @@ class BackendConfig(AppConfig):
 <label for="password">Password:</label>
 <input type="password" id="password" name="password">
 <br></br>
-<button type="button">Tap me</button>
+<label>
+    <input type="button" value="Tap me">
+</label>
 <br></br>
 <label>
     <input type="radio" name="gender" value="male"> Man
@@ -162,13 +166,21 @@ class BackendConfig(AppConfig):
 <label>
     <input type="checkbox" name="subscribe"> Check me
 </label>
+<input type="">
 <br></br>
 <label for="cars">Select auto:</label>
-<select id="cars" name="cars">
+<select id="cars" name="cars" multiple size="3">
     <option value="volvo">Volvo</option>
-    <option value="saab">Ford</option>
+    <option selected value="ford">Ford</option>
     <option value="mercedes">Mercedes</option>
 </select>
+<br></br>
+<datalist id="cars_again">
+    <option value="volvo">Volvo</option>
+    <option value="ford">Ford</option>
+    <option value="mercedes">Mercedes</option>
+</datalist>
+<input list="cars_again">
 <br></br>
 <label for="message">Message:</label>
 <textarea id="message" name="message" rows="4" cols="50"></textarea>
@@ -187,13 +199,15 @@ class BackendConfig(AppConfig):
             srcset="https://sun9-30.userapi.com/impg/Qi42bicYP_QB8s8PT8_CJqfnDj9B2u8INQzeVg/arjl8dm7EeY.jpg?size=1200x798&quality=95&sign=26c19d8f3427a1b157248cb8bc9b8f87&c_uniq_tag=yiaW4uGYuRYZfvHWOkBBhoj7f1n9ypFWOtRuvbngX5w&type=album">
     <source media="(min-width: 1280px)"
             srcset="https://mig.pics/uploads/posts/2020-02/1581104116_1-p-sovremennii-dizain-chastnikh-domov-1.jpg">
-    <source media="(min-width: 1702    px)"
+    <source media="(min-width: 1702px)"
             srcset="https://pr5.zoon.ru/CH5YmyRFmYW5UDtQRjNESw/2560x1702,q90/eg1zRrsxLFBUWia9GvaC0jQhBSBTBNTsSq0aME9E5rlQG6D7Te4Yk10DCLG80g2Tjv9AObRb176p0zHJHWM5M2Qml-JhU_ymvjiS6UTxznagJ6euJvnjrcCLU4mjcAN3ERMyFPKkCzc0zbuHoXRhaNvTJseQuFA90rATeN-ydJzQmKciIQyis97bT7NY75Kb28yRJUYd4DbkGDVUIWu6Pg">
     <img src="https://pr5.zoon.ru/CH5YmyRFmYW5UDtQRjNESw/2560x1702,q90/eg1zRrsxLFBUWia9GvaC0jQhBSBTBNTsSq0aME9E5rlQG6D7Te4Yk10DCLG80g2Tjv9AObRb176p0zHJHWM5M2Qml-JhU_ymvjiS6UTxznagJ6euJvnjrcCLU4mjcAN3ERMyFPKkCzc0zbuHoXRhaNvTJseQuFA90rATeN-ydJzQmKciIQyis97bT7NY75Kb28yRJUYd4DbkGDVUIWu6Pg"
          width="40%">
 </picture>
 <br></br>
-<video src="https://www.youtube.com/watch?v=XyBdLR0rskA" controls></video>
+<video src="https://www.youtube.com/watch?v=XyBdLR0rskA" controls>
+    <
+</video>
 <br></br>
 <audio src="https://www.youtube.com/watch?v=XyBdLR0rskA" controls></audio>
 </body>
