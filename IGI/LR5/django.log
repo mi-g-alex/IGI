@@ -3014,3 +3014,16 @@ Visit $1 new page
 Visit news page
 Visit index page
 Visit terms page
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Matplotlib is building the font cache; this may take a moment.
+Failed to extract font properties from /System/Library/Fonts/LastResort.otf: tuple indices must be integers or slices, not str
+Failed to extract font properties from /System/Library/Fonts/Supplemental/NISC18030.ttf: In FT2Font: Could not set the fontsize (invalid pixel size; error code 0x17)
+Failed to extract font properties from /System/Library/Fonts/Apple Color Emoji.ttc: In FT2Font: Could not set the fontsize (invalid pixel size; error code 0x17)
+generated new fontManager
+Visit index page
+Not Found: /test
+Not Found: /favicon.ico
+Not Found: /test/
