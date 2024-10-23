@@ -1,5 +1,69 @@
-{% block content %}
-    {% autoescape off %}
-    {{ view }}
-    {% endautoescape %}
-{% endblock %}
+{#{% block content %}#}
+{#    {% autoescape off %}#}
+{#    {{ view }}#}
+{#    {% endautoescape %}#}
+{#{% endblock %}#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Quality Certificate</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 590px;
+            height: 500px;
+        }
+
+        .certificate {
+            position: absolute;
+            width: 590px;
+            height: 500px;
+            text-align: center;
+            border-image: url('/static/frame.png') 590 / 100px;
+        }
+
+        .grad {
+            position: absolute;
+            width: 590px;
+            height: 500px;
+            text-align: center;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-content {
+            position: relative;
+            z-index: 1;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .text-content h1 {
+            margin: 100px 0 20px 0;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .text-content p {
+            margin: 100px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grad">
+    <div class="certificate">
+        <div class="text-content">
+            <h1>Сертификат Качества</h1>
+            <p>Этим подтверждается, что <strong>Зоопарк</strong>
+                <br>отвечает всем стандартам качества и безопасности.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

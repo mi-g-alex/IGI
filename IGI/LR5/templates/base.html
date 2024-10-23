@@ -1,9 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Zoo</title>
     <link rel="icon" href="/photos/about/logo_m.png"/>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+          rel="stylesheet">
+    {% block head %}{% endblock %}
 </head>
 <script>
     function updateTime() {
@@ -25,45 +31,46 @@
     updateTime();
 </script>
 <body>
-
 {% block top_navbar %}
-    <nav>
-        <ul>
-            <li><a href={% url 'zoo:home_page' %}>Home</a></li>
-            <li><a href={% url 'zoo:animal_list' %}>Animals</a></li>
-            <li><a href={% url 'zoo:about_page' %}>About</a></li>
-            <li><a href={% url 'zoo:news_page' %}>News</a></li>
-            <li><a href={% url 'zoo:terms_page' %}>Terms</a></li>
-            <li><a href={% url 'zoo:vacancy_page' %}>Vacancy</a></li>
-            <li><a href={% url 'zoo:policy_page' %}>Policy</a></li>
-            <li><a href={% url 'zoo:reviews_page' %}>Reviews</a></li>
-            <h1></h1>
-            {% if user.is_authenticated and not user.is_staff %}
-                <li><a href="{% url 'zoo:profile' %}">Profile</a></li>
-                <li><a href={% url 'zoo:promo_page' %}>Promo</a></li>
-                <li><a href={% url 'zoo:buy_ticket' %}>Buy ticket</a></li>
-                <li><a href={% url 'zoo:cart' %}>Cart</a></li>
-                <li><a href={% url 'zoo:my_tickets' %}>My Tickets</a></li>
-            {% elif user.is_staff and not user.is_superuser %}
-                <li><a href={% url 'zoo:my_animals' %}>My animals</a></li>
-            {% elif user.is_superuser %}
-                <li><a href={% url 'zoo:superuser_all_animals' %}>All animals</a></li>
-                <li><a href={% url 'zoo:superuser_all_places' %}>All places</a></li>
-                <li><a href={% url 'zoo:superuser_all_employees' %}>All employees</a></li>
-                <li><a href={% url 'zoo:superuser_chart' %}>Chart</a></li>
-            {% else %}
-                <li><a href="{% url 'zoo:auth_login' %}">Login</a></li>
-                <li><a href="{% url 'zoo:auth_registration' %}">Register</a></li>
-            {% endif %}
-            {% if user.is_authenticated %}
-                <form method="post" action="{% url 'zoo:auth_logout' %}">
-                    {% csrf_token %}
-                    <button type="submit">Logout</button>
-                </form>
-            {% endif %}
-        </ul>
-    </nav>
-
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href={% url 'zoo:home_page' %}>Home</a></li>
+                <li><a href={% url 'zoo:animal_list' %}>Animals</a></li>
+                <li><a href={% url 'zoo:about_page' %}>About</a></li>
+                <li><a href={% url 'zoo:news_page' %}>News</a></li>
+                <li><a href={% url 'zoo:terms_page' %}>Terms</a></li>
+                <li><a href={% url 'zoo:vacancy_page' %}>Vacancy</a></li>
+                <li><a href={% url 'zoo:policy_page' %}>Policy</a></li>
+                <li><a href={% url 'zoo:reviews_page' %}>Reviews</a></li>
+                {% if user.is_authenticated and not user.is_staff %}
+                    <li><a href="{% url 'zoo:profile' %}">Profile</a></li>
+                    <li><a href={% url 'zoo:promo_page' %}>Promo</a></li>
+                    <li><a href={% url 'zoo:buy_ticket' %}>Buy ticket</a></li>
+                    <li><a href={% url 'zoo:cart' %}>Cart</a></li>
+                    <li><a href={% url 'zoo:my_tickets' %}>My Tickets</a></li>
+                {% elif user.is_staff and not user.is_superuser %}
+                    <li><a href={% url 'zoo:my_animals' %}>My animals</a></li>
+                {% elif user.is_superuser %}
+                    <li><a href={% url 'zoo:superuser_all_animals' %}>All animals</a></li>
+                    <li><a href={% url 'zoo:superuser_all_places' %}>All places</a></li>
+                    <li><a href={% url 'zoo:superuser_all_employees' %}>All employees</a></li>
+                    <li><a href={% url 'zoo:superuser_chart' %}>Chart</a></li>
+                {% else %}
+                    <li><a href="{% url 'zoo:auth_login' %}">Login</a></li>
+                    <li><a href="{% url 'zoo:auth_registration' %}">Register</a></li>
+                {% endif %}
+                {% if user.is_authenticated %}
+                    <li>
+                        <form method="post" action="{% url 'zoo:auth_logout' %}" class="logout-form">
+                            {% csrf_token %}
+                            <button type="submit">Logout</button>
+                        </form>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
 {% endblock %}
 <main>
     {% block content %}{% endblock %}
@@ -76,7 +83,10 @@
         <div id="timezone"></div>
         <br>
         {% autoescape off %}
-            <div>{{ ''|my_calendar }}</div>
+            <div class="item-block">
+                <h1>Calendar</h1>
+                <div>{{ ''|my_calendar }}</div>
+            </div>
         {% endautoescape %}
     </footer>
 {% endblock %}

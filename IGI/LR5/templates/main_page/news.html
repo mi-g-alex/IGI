@@ -1,10 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
 {% load first_sentence %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/news.css' %}"/>
+{% endblock %}
 {% block content %}
-    <h1>News</h1>
+    <div class="item-block">
+        <h1>News</h1>
+        <p>Read all news about our zoo!</p>
+    </div>
     {% for i in all_news %}
-        <h1><a href="{% url 'zoo:news_detail' i.pk %}">{{ i.title }}</a></h1>
-        <img src="{{ i.photo.url }}" alt="{{ i.title }}" width="10%"/>
-        <div>{{ i.text|first_sentence }}</div>
+        <div class="item-block">
+            <div class="news-content">
+                <a href="{% url 'zoo:news_detail' i.pk %}" class="news-title">{{ i.title }}</a>
+                <img src="{{ i.photo.url }}" alt="{{ i.title }}" class="news-image"/>
+                <div class="news-text">{{ i.text|first_sentence }}</div>
+                <a href="{% url 'zoo:news_detail' i.pk %}" class="news-read-more">Read more...</a>
+            </div>
+        </div>
     {% endfor %}
 {% endblock %}

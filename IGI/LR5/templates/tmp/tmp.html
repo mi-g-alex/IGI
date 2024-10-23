@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,17 @@
     <meta name="author" content="G_Alex">
     <meta name="description" content="Test page"/>
     <title>Zoo</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <style>
+        :lang(en) {
+            quotes: "#" "#" "<<" ">>";
+        }
+
+        :lang(ru) {
+            quotes: "~" "~" "`" "`";
+        }
+
+    </style>
 </head>
 
 <body>
@@ -32,11 +44,11 @@ class BackendConfig(AppConfig):
 И заканчивается тут
 </pre>
 <br>
-<var>a = 3</var>
+<var>var a = 3</var>
 <br>
-<samp>It is output</samp>
+<samp>samp: It is output</samp>
 <br>
-<kbd>It is user Input</kbd>
+<kbd>kbd: It is user Input</kbd>
 <hr>
 <h1>Сокращения</h1>
 <ul>
@@ -51,7 +63,9 @@ class BackendConfig(AppConfig):
 </ul>
 
 <h1>Определения</h1>
+<p>dfn</p>
 <dfn title="It">It</dfn> is fun
+<p>dl + dt + dd</p>
 <dl>
     <dt>It's</dt>
     <dd>It is</dd>
@@ -66,7 +80,14 @@ class BackendConfig(AppConfig):
 <ul>
     <li>q + cite</li>
     <q cite="https://ya.ru/">Short quote at <cite>yandex</cite></q>
-
+    <br>
+    <p>
+        <q lang="en">En <q>en</q> Инглиш</q>
+    </p>
+    <br>
+    <p>
+        <q lang="ru">Ru <q>ru</q> русиш</q>
+    </p>
     <li>cite</li>
     <p>Book <cite>Elon Mask</cite></p>
 
@@ -99,25 +120,24 @@ class BackendConfig(AppConfig):
 
 <h1>Ссылки</h1>
 <ul>
-    <li>Absolute reference</li>
+    <li type="disc">Absolute reference</li>
     <a href="http://localhost:8080/about/">Go to about ref</a>
 
-    <li>Relative reference</li>
+    <li type="circle">Relative reference</li>
     <a href="about/">Go to about ref</a>
 
-    <li>Link to download file</li>
-    <a href="https://www.bsuir.by/m/12_100229_1_185586.pdf" download="https://www.bsuir.by/m/12_100229_1_185586.pdf">Download
-        СТП-2024</a>
+    <li type="square">Link to download file</li>
+    <a href="https://www.bsuir.by/m/12_100229_1_185586.pdf" download>Download СТП-2024</a>
 
     <li>Якорь</li>
     <a href="#start">Go to start</a>
 </ul>
 
-<h1>Еще один список</h1>
-<ol>
-    <li>Раз</li>
-    <li>Два</li>
-    <li>Три</li>
+<h1>Еще один список ol + li</h1>
+<ol reversed start="3">
+    <li type="A">Раз</li>
+    <li type="I">Два</li>
+    <li type="1">Три</li>
 </ol>
 
 <h1>Фигуры</h1>

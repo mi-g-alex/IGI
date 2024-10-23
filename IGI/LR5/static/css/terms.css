@@ -1,0 +1,38 @@
+details {
+    position: relative;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+summary {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+}
+
+details[open] summary::after {
+    content: "–";
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+summary::after {
+    content: "+";
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #555;
+    line-height: 1.5;
+}

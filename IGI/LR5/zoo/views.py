@@ -24,7 +24,7 @@ from django.contrib import messages
 
 from zoo.forms.superuser_animal_filter import SuperUserAnimalFilterForm
 from zoo.models import New, Term, Vacancy, Promo, Comment, Ticket, Price, Animal, Employee, Place, FoodName
-from zoo.models.Info import About, AdsBanners, Partners
+from zoo.models.Info import About, AdsBanners, Partners, AboutYearHistory
 
 logger = logging.getLogger(__name__)
 
@@ -52,7 +52,7 @@ def about(request):
     text = about_data.info
     logo = about_data.logo
     video = about_data.video
-    year_history = about_data.year_history
+    year_history = AboutYearHistory.objects.all().order_by('year')
     return render(request, 'main_page/about.html',
                   {'text': text, 'logo': logo, 'video': video, 'year_history': year_history})
 

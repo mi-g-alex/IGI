@@ -1,9 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/vacancy.css' %}"/>
+{% endblock %}
 {% block content %}
-    <h1>It is page with vacancies</h1>
-    {% for vacancy in vacancies %}
-        <h1>{{ vacancy.position.name }}</h1>
-        <h4>What to do: {{ vacancy.position.info }}</h4>
-        <h5>Salary: {{ vacancy.salary }}$</h5>
-    {% endfor %}
+    <div class="item-block">
+        <h1>Vacancy</h1>
+    </div>
+    <div>
+        <div class="vacancy-list">
+            {% for vacancy in vacancies %}
+                <div class="vacancy-card item-block">
+                    <h1>{{ vacancy.position.name }}</h1>
+                    <h4>What to do: {{ vacancy.position.info }}</h4>
+                    <h5>Salary: {{ vacancy.salary }}$</h5>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
 {% endblock %}

@@ -1,11 +1,21 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/reviews.css' %}"/>
+{% endblock %}
 {% block content %}
-    <h1>It is page with reviews</h1>
-    <button><a href='{% url 'zoo:new_review' %}'>New Review</a></button>
+    <div class="item-block">
+        <h1>It is page with reviews</h1>
+        <button class="main-button"><a href='{% url 'zoo:new_review' %}'>New Review</a></button>
+    </div>
     {% for i in reviews %}
-        <h1>{{ i.user.username }}</h1>
-        <h2>Rating: {{ i.rating }}</h2>
-        <h2>{{ i.text }}</h2>
-        <h5>{{ i.date }} by {{ i.user.user.username }}  </h5>
+        <div class="review-card item-block">
+            <div class="review-header">
+                <h1>{{ i.user.user.username }}</h1>
+                <h1>{{ i.rating }}</h1>
+            </div>
+            <h2>{{ i.text }}</h2>
+            <p><small>{{ i.date }} by {{ i.user.user.username }}</small></p>
+        </div>
     {% endfor %}
 {% endblock %}

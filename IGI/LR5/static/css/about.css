@@ -1,0 +1,54 @@
+#zoo-logo {
+    transform: scale(0.95) rotate(-20deg) translate(60px, 150%);
+}
+
+video {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.timeline {
+    position: relative;
+    margin: 10px 0;
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    width: 2px;
+    background-color: #ccbb0088;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 100px;
+}
+
+.timeline-item::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 44px;
+    margin-top: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ccbb00;
+}
+
+.history-year-text {
+    padding-bottom: 8px;
+}
+
+.timeline-item-content {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}

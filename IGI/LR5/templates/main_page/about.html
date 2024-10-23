@@ -1,11 +1,38 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}"/>
+{% endblock %}
 {% block content %}
-    <h1>About</h1>
-    {{ text }}
-    <br>
-    <img src="{{ logo }}" alt="Logo"/>
-    <br>
-    <video src="{{ video }}" controls></video>
-    <pre>{{ year_history }}</pre>
-    <iframe src="cert"></iframe>
+    <img id="zoo-logo" src="{{ logo }}" alt="Logo"/>
+    <div class="item-block">
+        <h1>About</h1>
+        {{ text }}
+        <br>
+    </div>
+    <div class="item-block">
+        <h1>Some video</h1>
+        <video src="{{ video }}" controls muted="muted" autoplay="autoplay"></video>
+    </div>
+
+    <div class="item-block">
+    <h1>Year history</h1>
+        <ul class="timeline">
+            {% for item in year_history %}
+                <li class="timeline-item">
+                    <div class="history-year-text">
+                        <strong>{{ item.year }}</strong>
+                    </div>
+                    <div class="timeline-item-content">
+                        {{ item.text }}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+    <div class="item-block">
+    <iframe src="cert" style="width: 590px;height: 500px"></iframe>
+    </div>
 {% endblock %}

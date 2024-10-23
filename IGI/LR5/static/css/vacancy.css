@@ -1,0 +1,18 @@
+.vacancy-card {
+    float: outside;
+}
+
+.vacancy-card h1 {
+    float: right;
+    font-size: 20px;
+    margin-top: 0;
+    color: #000;
+}
+
+.vacancy-card h1::first-letter {
+    color: #f9534f;
+}
+
+.vacancy-card h4, .vacancy-card h5 {
+    margin: 10px 0;
+}

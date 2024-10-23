@@ -1,0 +1,152 @@
+body {
+    background-image: url("/static/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    horiz-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 10em) and (max-width: 60em) {
+    h1 {
+        font-style: italic;
+    }
+}
+
+.item-block {
+    position: relative;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a, .navbar li form button {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+}
+
+.navbar li a:hover, .navbar li form button:hover {
+    background-color: #111;
+}
+
+.navbar li form {
+    margin: 0;
+}
+
+.logout-form button {
+    background-color: #ff000077;
+}
+
+body {
+    margin: 100px 0 0 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+/* Ссылки */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f00;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0ff;
+}
+
+a:hover, a:focus {
+    color: #00f;
+}
+
+.navbar li:first-child {
+    font-weight: bold;
+    background: #ddee0099;
+
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-indent: 15px;
+}
+
+::selection {
+    background-color: #99cc0044;
+}
+
+.main-button {
+    background-color: #ccbb00;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+table {
+    border-collapse: collapse; /* Убирает двойные линии */
+    text-align: center; /* Горизонтальное выравнивание */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: middle; /* Вертикальное выравнивание */
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td:empty {
+    background-color: #ffe0e0; /* Изменение фона для пустых ячеек */
+}
+

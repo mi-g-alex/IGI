@@ -1,0 +1,27 @@
+/* Partners */
+.partners-list {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    align-content: center;
+}
+
+.partners-list img {
+    width: auto;
+    height: 40%;
+}
+
+.partners-list p {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+    letter-spacing: 1px; /* кернинг */
+}

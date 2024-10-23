@@ -1,0 +1,80 @@
+.my-form form .my-form form p {
+    margin-bottom: 15px;
+}
+
+.my-form form p label, .my-form form span label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.my-form p textarea, .my-form form p input, .my-form form .form-group input {
+    width: auto;
+    padding: 8px 5px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.my-form form span {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.my-form form span input {
+    padding: 8px 5px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.my-form form p input:focus {
+    border-color: #ccbb00;
+    outline: none;
+}
+
+.my-form form [type=submit] {
+    width: auto;
+    padding: 10px 20px 10px 20px;
+    background-color: #ccbb00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.my-form form [type=number] {
+    width: auto;
+    padding: 8px 15px;
+    align-content: end;
+    background-color: #ddd;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea {
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12px;
+    max-width: 50%;
+}
+
+
+.errorlist {
+    list-style: none;
+    color: #d9534f;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f2dede;
+    border: 1px solid #d9534f;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.errorlist.nonfield {
+    margin-bottom: 15px; /* Space below non-field errors */
+}

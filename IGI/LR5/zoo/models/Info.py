@@ -1,5 +1,3 @@
-import datetime
-
 from zoo.models import Position
 from zoo.models.BaseModel import BaseModel
 from django.db import models
@@ -19,11 +17,18 @@ class AdsBanners(BaseModel):
     image = models.ImageField(upload_to='photos/adsBanners/')
 
 
+class AboutYearHistory(BaseModel):
+    year = models.DateField()
+    text = models.TextField()
+
+    def __str__(self):
+        return self.year.__str__() + " " + self.text
+
+
 class About(BaseModel):
     info = models.TextField()
     logo = models.ImageField(upload_to='photos/about/')
     video = models.FileField(upload_to='photos/about/')
-    year_history = models.TextField()
     certificate = models.TextField()
 
     def __str__(self):

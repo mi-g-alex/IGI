@@ -1,0 +1,87 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* задает три столбца одинаковой ширины */
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.grid-container .animal-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px; /* минимальная ширина для каждой карточки животного */
+}
+
+.grid-container img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.grid-container .animal-details {
+    text-align: center;
+}
+
+.grid-container h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.grid-container p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.filter-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.filter-form .form-group {
+    margin-bottom: 15px;
+}
+
+.filter-form label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.filter-form input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.filter-form button[type="submit"] {
+    background-color: #ccbb00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.filter-form button[type="submit"]:hover {
+    background-color: #bbcc00;
+}
+

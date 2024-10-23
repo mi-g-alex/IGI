@@ -1,10 +1,18 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/terms.css' %}"/>
+{% endblock %}
 {% block content %}
-    <h1>Terms</h1>
+    <div class="item-block">
+        <h1>Terms</h1>
+    </div>
     {% for term in terms %}
-        <details>
-            <summary>{{ term.title }}</summary>
-            <p>{{ term.info }}</p>
-        </details>
+        <div class="item-block">
+            <details>
+                <summary>{{ term.title }}</summary>
+                <p>{{ term.info }}</p>
+            </details>
+        </div>
     {% endfor %}
 {% endblock %}

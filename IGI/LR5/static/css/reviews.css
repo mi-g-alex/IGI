@@ -1,0 +1,30 @@
+button:hover {
+    background-color: #bbcc00;
+}
+
+button a {
+    color: inherit; /* Наследует цвет родительского элемента, в данном случае – белый */
+    text-decoration: none;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: medium;
+    color: #555;
+    margin: 5px 0;
+}
+
+small {
+    color: #999;
+    margin: 10px 0 0 0;
+}
+
+a:link, a:visited {
+    color: inherit; /* Делает цвет ссылки таким же, как у текста */
+    text-decoration: none;
+}
