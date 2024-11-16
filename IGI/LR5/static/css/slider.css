@@ -1,0 +1,103 @@
+.slider {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    inline-size: 90%;
+    position: relative;
+}
+
+.slider .button {
+    cursor: pointer;
+    user-select: none;
+}
+
+.slider .controls {
+    margin-block-end: 20px;
+}
+
+.slider .slides {
+    inline-size: 100%;
+}
+
+.slider .slide {
+    display: none;
+    text-align: center;
+}
+
+.slider .slide--active {
+    display: block;
+}
+
+.slider .button-prev,
+.slider .button-next {
+    position: absolute;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    border: none;
+    inline-size: 30px;
+    block-size: 42px;
+    background-color: transparent;
+    background-image: url(./arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.slider .button-prev:disabled,
+.slider .button-next:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.slider .button-prev {
+    inset-inline-start: -7%;
+}
+  
+.slider .button-next {
+    inset-inline-end: -7%;
+    transform: translateY(-50%) rotateY(180deg);
+    transform-origin: center;
+}
+
+.slider .slide-img {
+    display: block;
+    inline-size: 100%;
+    block-size: 300px;
+    object-fit: cover;
+}
+
+.slider .button-pagging-control {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    inline-size: 15px;
+    block-size: 15px;
+    border-radius: 50%;
+    border: 1px solid #333333;
+  }
+
+.slider .button-pagging-control.active {
+    background-color: #C56FFF;
+    pointer-events: none;
+}
+  
+.slider .button-pagging-control:focus-visible {
+    outline: 3px solid white;
+    outline-offset: -1px;
+}
+
+.button-pagging-control + .button-pagging-control {
+    margin-inline-start: 12px;
+}
+
+.slider .paggin-cotrols {
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.slider .current-page-text {
+    color: #888;
+    margin-left: auto;
+    margin-right: auto;
+}

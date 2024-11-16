@@ -39,6 +39,7 @@ urlpatterns = [
     re_path(r'^super/employees/?$', views.super_user_employees_list, name='superuser_all_employees'),
     path('super/employees/<int:pk>', views.super_user_employee, name='superuser_employee_details'),
     path('super/chart', views.chart_page, name='superuser_chart'),
+    re_path(r'^super/mysettings/?$', views.edit_slider_settings, name='edit_slider_settings'),
 
     re_path('^tmp/?$', views.tmp, name='my_tmp'),
 

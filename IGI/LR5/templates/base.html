@@ -56,6 +56,7 @@
                     <li><a href={% url 'zoo:superuser_all_places' %}>All places</a></li>
                     <li><a href={% url 'zoo:superuser_all_employees' %}>All employees</a></li>
                     <li><a href={% url 'zoo:superuser_chart' %}>Chart</a></li>
+                    <li><a href={% url 'zoo:edit_slider_settings' %}>Settings</a></li>
                 {% else %}
                     <li><a href="{% url 'zoo:auth_login' %}">Login</a></li>
                     <li><a href="{% url 'zoo:auth_registration' %}">Register</a></li>

@@ -13,6 +13,7 @@ from django.contrib.auth.views import LoginView
 from django.utils import timezone
 from datetime import timedelta
 from django.shortcuts import render, redirect, get_object_or_404
+from django.core import serializers
 
 from zoo.forms.animal_filter import AnimalFilterForm
 from zoo.forms.buy_ticket_form import TicketForm
@@ -22,9 +23,10 @@ from zoo.forms.registration_form import UserRegistrationForm
 
 from django.contrib import messages
 
+from zoo.forms.slider_settings import SliderSettingsForm
 from zoo.forms.superuser_animal_filter import SuperUserAnimalFilterForm
 from zoo.models import New, Term, Vacancy, Promo, Comment, Ticket, Price, Animal, Employee, Place, FoodName
-from zoo.models.Info import About, AdsBanners, Partners, AboutYearHistory
+from zoo.models.Info import About, AdsBanners, Partners, AboutYearHistory, SliderSetitngs
 
 logger = logging.getLogger(__name__)
 
@@ -40,10 +42,11 @@ def index(request):
     ads = AdsBanners.objects.all()
     partners = Partners.objects.all()
     prices = Price.objects.all()
+    sliderSettings = SliderSetitngs.objects.last()
 
     logger.info("Visit index page")
     return render(request, 'main_page/index.html',
-                  {'new': new, 'fact': fact, 'ads': ads, 'logo': logo, 'partners': partners, 'prices': prices})
+                  {'new': new, 'fact': fact, 'ads': ads, 'logo': logo, 'partners': partners, 'prices': prices, 'slider_settings': sliderSettings})
 
 
 def about(request):
@@ -392,6 +395,17 @@ def super_user_employees_list(request):
     employees = Employee.objects.all()
     return render(request, 'superuser/superuser_employees.html', {"employees": employees})
 
+@staff_member_required
+def edit_slider_settings(request):
+    slider_settings = SliderSetitngs.objects.last()
+    if request.method == 'POST':
+        form = SliderSettingsForm(request.POST, instance=slider_settings)
+        if form.is_valid():
+            form.save()
+            return redirect('zoo:home_page')
+    else:
+        form = SliderSettingsForm(instance=slider_settings)
+    return render(request, 'superuser/slider_settings.html', {'form': form}) 
 
 @staff_member_required()
 def super_user_employee(it_request, pk):

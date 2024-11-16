@@ -14,9 +14,19 @@ class Partners(BaseModel):
 
 
 class AdsBanners(BaseModel):
-    image = models.ImageField(upload_to='photos/adsBanners/')
+    imageSrc = models.ImageField(upload_to='photos/adsBanners/')
+    url = models.TextField(default="")
+    title = models.TextField(default="")
+    
 
-
+class SliderSetitngs(BaseModel): 
+    delay = models.IntegerField(default=5000)
+    isLoop = models.BooleanField(default=True)
+    showNavs = models.BooleanField(default=True)
+    usePagination = models.BooleanField(default=True)
+    autoSwitch = models.BooleanField(default=True)
+    stopOnMouseHover = models.BooleanField(default=True)
+    
 class AboutYearHistory(BaseModel):
     year = models.DateField()
     text = models.TextField()
