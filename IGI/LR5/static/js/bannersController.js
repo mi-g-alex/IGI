@@ -75,8 +75,6 @@ class BannerController {
         this.slideImage = slideImg
         this.slideTitle = slideTitle
 
-
-
         this.setupBanner()
     }
 
@@ -160,8 +158,8 @@ class BannerController {
     }
 
     changeSelectedDot(prevN, nextN) {
-        var prevBtn = this.pagginButtons[prevN]
-        var nextBtn = this.pagginButtons[nextN]
+        let prevBtn = this.pagginButtons[prevN]
+        let nextBtn = this.pagginButtons[nextN]
         prevBtn.className = 'button-pagging-control'
         nextBtn.className = 'button-pagging-control active'
     }
@@ -169,7 +167,7 @@ class BannerController {
     startAutoSwith() {
         console.log("Start auto switch")
         if(this.autoSwitch) {
-            var f = () => { this.goNext() }
+            let f = () => { this.goNext() }
             this.autoSwitchTimerId = setInterval(f, this.delay)
             console.log(this.autoSwitchTimerId)
         }

@@ -7,29 +7,11 @@
     <link rel="icon" href="/photos/about/logo_m.png"/>
     <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/forms.css' %}"/>
+    <script src="{% static 'js/timer.js' %}"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
           rel="stylesheet">
     {% block head %}{% endblock %}
 </head>
-<script>
-    function updateTime() {
-        const now = new Date();
-        const timeOptions = {
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            hour12: false
-        };
-        const timeString = now.toLocaleDateString('en-US') + " " + now.toLocaleTimeString('en-US', timeOptions);
-        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-        document.getElementById('time').textContent = timeString;
-        document.getElementById('timezone').textContent = timeZone;
-    }
-
-    setInterval(updateTime, 1000);
-    updateTime();
-</script>
 <body>
 {% block top_navbar %}
     <header>
@@ -79,6 +61,7 @@
 {% load my_calendar %}
 {% block footer %}
     <footer>
+        <h3 class='timer'></h3>
         <h4>Made with Django by Alexander Gorgun</h4>
         <div id="time"></div>
         <div id="timezone"></div>
@@ -90,6 +73,9 @@
             </div>
         {% endautoescape %}
     </footer>
+    <script>
+        startCountdown(document.querySelector('.timer'))
+    </script>
 {% endblock %}
 </body>
 </html>

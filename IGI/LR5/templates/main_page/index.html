@@ -58,7 +58,7 @@
                 "url": "{{i.url}}"
             })
         {% endfor %}
-        banner = new BannerController(list, document.querySelector('.main-slider'))
+        let banner = new BannerController(list, document.querySelector('.main-slider'))
         banner.setLoop = "{{ slider_settings.isLoop }}" == "True"
         banner.setNavs = "{{ slider_settings.showNavs }}" == "True"
         banner.setPagination = "{{ slider_settings.usePagination }}" == "True"
