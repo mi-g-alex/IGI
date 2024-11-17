@@ -306,5 +306,4 @@ class EmployeeTable {
             this.#pagginationDiv.appendChild(nmb)
         }
     }
-
 }

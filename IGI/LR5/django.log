@@ -6490,3 +6490,7 @@ Traceback (most recent call last):
   File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/forms/models.py", line 545, in save
     raise ValueError(
 ValueError: The Employee could not be created because the data didn't validate.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Visit index page
+Watching for file changes with StatReloader

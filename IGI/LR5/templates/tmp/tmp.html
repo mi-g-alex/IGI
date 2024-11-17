@@ -1,283 +1,102 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="G_Alex">
-    <meta name="description" content="Test page"/>
-    <title>Zoo</title>
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <style>
-        :lang(en) {
-            quotes: "#" "#" "<<" ">>";
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/test.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Styled Tables and Elements</title>
+  <style>
+    .control-panel {
+      display: none;
+      margin-top: 20px;
+    }
+    .styled-table {
+      max-width: 100%;
+      height: auto;
+    }
+    .image {
+        width: 20%; 
+        height: auto; 
+    }
+  </style>
+  <script src="{% static 'js/controls.js' %}"></script>
 
-        :lang(ru) {
-            quotes: "~" "~" "`" "`";
-        }
-
-    </style>
 </head>
-
 <body>
-<div id="start">Тут якорь начала</div>
+<header>
+    <div class="control-panel" id="control-panel">
+        <label for="font-size">Font Size:</label>
+        <input type="range" id="font-size" min="10" max="30" value="16">
+    
+        <label for="text-color">Text Color:</label>
+        <input type="color" id="text-color" value="#000000">
+    
+        <label for="bg-color">Background Color:</label>
+        <input type="color" id="bg-color" value="#ffffff">
+      </div>    
+</header>
 
-<h1>Fieldset + legend</h1>
-<fieldset>
-    <legend>Личные данные</legend>
+<main>
+    <input type="checkbox" id="toggle-control-panel">
+    <label for="toggle-control-panel">Show Controls</label>
+    <h1>Styled Tables and Elements</h1>
+    <table class="styled-table">
+        <caption>Example Table</caption>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <input type="text" name="name" placeholder="Имя"></input>
-    <input type="text" name="sname" placeholder="Фамилия"></input>
-</fieldset>
+    <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <q lang="fr">Ceci est une citation</q>.</p>
+    </article>
 
-<h1>Листинг кода</h1>
-<pre>
-Код начинает тут
-    <code>
-from django.apps import AppConfig
+    <ul class="styled-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 
+    <img class="image" src="https://www.piclumen.com/wp-content/uploads/2024/10/piclumen-upscale-after.webp" alt="Random Image">
 
-class BackendConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'zoo'
-    </code>
-И заканчивается тут
-</pre>
-<br>
-<var>var a = 3</var>
-<br>
-<samp>samp: It is output</samp>
-<br>
-<kbd>kbd: It is user Input</kbd>
-<hr>
-<h1>Сокращения</h1>
-<ul>
-    <li>abbr</li>
-    <abbr title="Very long long long long long long long long long long long long long long long long long long long long long long long long long long long text">Very
-        long text</abbr>
-    <li>acrnym (deprecated)</li>
-    <acronym
-            title="Very long long long long long long long long long long long long long long long long long long long long long long long long long long long text">Very
-        long text
-    </acronym>
-</ul>
+    </main>
 
-<h1>Определения</h1>
-<p>dfn</p>
-<dfn title="It">It</dfn> is fun
-<p>dl + dt + dd</p>
-<dl>
-    <dt>It's</dt>
-    <dd>It is</dd>
-    <dt>I'm</dt>
-    <dd>I am</dd>
-    <dt>I've</dt>
-    <dd>I have</dd>
-</dl>
-
-
-<h1>Цитаты</h1>
-<ul>
-    <li>q + cite</li>
-    <q cite="https://ya.ru/">Short quote at <cite>yandex</cite></q>
-    <br>
-    <p>
-        <q lang="en">En <q>en</q> Инглиш</q>
-    </p>
-    <br>
-    <p>
-        <q lang="ru">Ru <q>ru</q> русиш</q>
-    </p>
-    <li>cite</li>
-    <p>Book <cite>Elon Mask</cite></p>
-
-    <li>blockquote</li>
-    <blockquote>
-        Very long long long long long long long long long long long long long long long long long long quote
-    </blockquote>
-</ul>
-
-<h1>Date-Time</h1>
-<p>Lesson start at
-    <time datetime="2024-09-18 12:25">September 18</time>
-    .
-</p>
-
-<h1>Четверостишье</h1>
-<ul>
-    <li>p + br</li>
-    <p>
-        С добрым утром! Взгляни: ждет за окнами белый<br>
-        Необъезженный конь. Оседлай, если смел.<br>
-        И не дай тебе бог век печалиться целый<br>
-        От сознанья, что мог, но свершить не успел.
-    </p>
-    <li>pre</li>
-    <pre>
-Что я желал бы под шатром судеб? <wbr>Всего, что вы желали бы, того же: <wbr>Чтоб легче и дешевле стал бы хлеб, <wbr>А слово и весомей, и дороже! <wbr>Что я желал бы под шатром судеб? <wbr>Всего, что вы желали бы, того же: <wbr>Чтоб легче и дешевле стал бы хлеб, <wbr>А слово и весомей, и дороже! <wbr>
-    </pre>
-</ul>
-
-<h1>Ссылки</h1>
-<ul>
-    <li type="disc">Absolute reference</li>
-    <a href="http://localhost:8080/about/">Go to about ref</a>
-
-    <li type="circle">Relative reference</li>
-    <a href="about/">Go to about ref</a>
-
-    <li type="square">Link to download file</li>
-    <a href="https://www.bsuir.by/m/12_100229_1_185586.pdf" download>Download СТП-2024</a>
-
-    <li>Якорь</li>
-    <a href="#start">Go to start</a>
-</ul>
-
-<h1>Еще один список ol + li</h1>
-<ol reversed start="3">
-    <li type="A">Раз</li>
-    <li type="I">Два</li>
-    <li type="1">Три</li>
-</ol>
-
-<h1>Фигуры</h1>
-<figure>
-    <img src="https://avatars.mds.yandex.net/get-mpic/1669769/img_id1160932399383934012.jpeg/orig" width="20%"
-         alt="Описание изображения">
-    <figcaption>Подпись к изображению</figcaption>
-</figure>
-
-<h1>Таблица</h1>
-<table border="1">
-    <thead>
-    <tr>
-        <th id="header1" colspan="2">Info</th>
-        <th id="header2" rowspan="2">Value</th>
-    </tr>
-    <tr>
-        <th id="name">Name</th>
-        <th id="age">Age</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td headers="header1 name">Uliana</td>
-        <td headers="header1 age">25</td>
-        <td headers="header2">200</td>
-    </tr>
-    <tr>
-        <td headers="header1 name">Karolina</td>
-        <td headers="header1 age">30</td>
-        <td headers="header2">300</td>
-    </tr>
-    </tbody>
-</table>
-
-<h1>Элементы управления</h1>
-<label for="name">Name:</label>
-<input type="text" id="name" name="name">
-<br></br>
-<label for="password">Password:</label>
-<input type="password" id="password" name="password">
-<br></br>
-<label>
-    <input type="button" value="Tap me">
-</label>
-<br></br>
-<label>
-    <input type="radio" name="gender" value="male"> Man
-</label>
-<label>
-    <input type="radio" name="gender" value="female"> Woman
-</label>
-<br></br>
-<label>
-    <input type="checkbox" name="subscribe"> Check me
-</label>
-<input type="">
-<br></br>
-<label for="cars">Select auto:</label>
-<select id="cars" name="cars" multiple size="3">
-    <option value="volvo">Volvo</option>
-    <option selected value="ford">Ford</option>
-    <option value="mercedes">Mercedes</option>
-</select>
-<br></br>
-<datalist id="cars_again">
-    <option value="volvo">Volvo</option>
-    <option value="ford">Ford</option>
-    <option value="mercedes">Mercedes</option>
-</datalist>
-<input list="cars_again">
-<br></br>
-<label for="message">Message:</label>
-<textarea id="message" name="message" rows="4" cols="50"></textarea>
-<br></br>
-<input type="hidden" name="userid" value="12345">
-<br></br>
-<label for="date">Date:</label>
-<input type="date" id="date" name="date">
-<br></br>
-<label for="volume">Volume:</label>
-<input type="range" id="volume" name="volume" min="0" max="100">
-<br></br>
-
-<picture>
-    <source media="(max-width: 798px)"
-            srcset="https://sun9-30.userapi.com/impg/Qi42bicYP_QB8s8PT8_CJqfnDj9B2u8INQzeVg/arjl8dm7EeY.jpg?size=1200x798&quality=95&sign=26c19d8f3427a1b157248cb8bc9b8f87&c_uniq_tag=yiaW4uGYuRYZfvHWOkBBhoj7f1n9ypFWOtRuvbngX5w&type=album">
-    <source media="(min-width: 1280px)"
-            srcset="https://mig.pics/uploads/posts/2020-02/1581104116_1-p-sovremennii-dizain-chastnikh-domov-1.jpg">
-    <source media="(min-width: 1702px)"
-            srcset="https://pr5.zoon.ru/CH5YmyRFmYW5UDtQRjNESw/2560x1702,q90/eg1zRrsxLFBUWia9GvaC0jQhBSBTBNTsSq0aME9E5rlQG6D7Te4Yk10DCLG80g2Tjv9AObRb176p0zHJHWM5M2Qml-JhU_ymvjiS6UTxznagJ6euJvnjrcCLU4mjcAN3ERMyFPKkCzc0zbuHoXRhaNvTJseQuFA90rATeN-ydJzQmKciIQyis97bT7NY75Kb28yRJUYd4DbkGDVUIWu6Pg">
-    <img src="https://pr5.zoon.ru/CH5YmyRFmYW5UDtQRjNESw/2560x1702,q90/eg1zRrsxLFBUWia9GvaC0jQhBSBTBNTsSq0aME9E5rlQG6D7Te4Yk10DCLG80g2Tjv9AObRb176p0zHJHWM5M2Qml-JhU_ymvjiS6UTxznagJ6euJvnjrcCLU4mjcAN3ERMyFPKkCzc0zbuHoXRhaNvTJseQuFA90rATeN-ydJzQmKciIQyis97bT7NY75Kb28yRJUYd4DbkGDVUIWu6Pg"
-         width="40%">
-</picture>
-<br></br>
-<video src="https://www.youtube.com/watch?v=XyBdLR0rskA" controls>
-    <
-</video>
-<br></br>
-<audio src="https://www.youtube.com/watch?v=XyBdLR0rskA" controls></audio>
+    <script>
+    setupControlPanel();
+    </script>
 </body>
-
-<h1>Micro data</h1>
-<div itemscope itemtype="https://schema.org/SoftwareApplication">
-    <span itemprop="name" translate="no">Angry Birds</span> - REQUIRES
-    <span itemprop="operatingSystem" translate="no">ANDROID</span><br/>
-    <link
-            itemprop="applicationCategory"
-            href="https://schema.org/SoftwareApplication"/>
-
-    <div
-            itemprop="aggregateRating"
-            itemscope
-            itemtype="https://schema.org/AggregateRating">
-        RATING:
-        <span itemprop="ratingValue">4.6</span> (
-        <span itemprop="ratingCount">8864</span> ratings )
-    </div>
-
-    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        Price: $<span itemprop="price">1.00</span>
-        <meta itemprop="priceCurrency" content="USD"/>
-    </div>
-</div>
-
-<br>
-<b>Bold</b>
-<br>
-<em>Accent italic</em>
-<br>
-<i>italic</i>
-<br>
-<s>Crossed out</s>
-<br>
-<strong>BOOOOLD and STRONG</strong>
-<br>
-<u>Underline</u>
-<br>
-Norm <small>Small <small>Smaller</small> Small</small> Norm
-<br>
-<sup><sup>Up</sup>Up</sup> or <sub>Down<sub>Down</sub></sub>
-<br>
-<mark>mark</mark>
+</html>
