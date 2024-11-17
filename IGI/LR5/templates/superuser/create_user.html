@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% block head %}
+  <style>
+    .form-field {
+      margin-bottom: 10px;
+    }
+    
+    .invalid {
+      border: 2px solid red;
+      background-color: pink;
+    }
+    
+    .error-message {
+      color: red;
+      font-size: 0.875rem;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+    
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <div class="item-block">
+    <h2>Add Employee</h2>
+  </div>
+  <div class="item-block">
+    <form id="employee-form" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="form-field">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-field">
+          <label for="photo">Photo:</label>
+          <input type="file" id="photo" name="photo" accept="image/*" required>
+          <div id="photo-error" class="error-message"></div>
+      </div>
+      <div class="form-field">
+          <label for="info">Job Description:</label>
+          <input type="text" id="info" name="info" required>
+      </div>
+      <div class="form-field">
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone" required>
+          <div id="phone-error" class="error-message"></div>
+      </div>
+      <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <button type="submit" id="add-btn" disabled>Add to Table</button>
+  </form>  
+  </div>
+
+  <script>
+    const validatePhone = (phone) => /^(8|\+375)(\s*\(?\d{2}\)?)\s*\d{3}([- ]?\d{2}){2}$/.test(phone);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('employee-form');
+        const nameInput = document.getElementById('name');
+        const photoInput = document.getElementById('photo');
+        const descriptionInput = document.getElementById('info');
+        const phoneInput = document.getElementById('phone');
+        const emailInput = document.getElementById('email');
+        const addButton = document.getElementById('add-btn');
+
+        const phoneError = document.getElementById('phone-error');
+
+        const updateButtonState = () => {
+            const isFormValid = nameInput.value && photoInput.files.length > 0 &&
+                descriptionInput.value && validatePhone(phoneInput.value) && emailInput.value;
+
+            addButton.disabled = !isFormValid;
+
+            if (!validatePhone(phoneInput.value)) {
+                phoneInput.classList.add('invalid');
+                phoneError.textContent = 'Invalid phone number format';
+            } else {
+                phoneInput.classList.remove('invalid');
+                phoneError.textContent = '';
+            }
+        };
+
+        phoneInput.addEventListener('input', updateButtonState);
+        nameInput.addEventListener('input', updateButtonState);
+        descriptionInput.addEventListener('input',updateButtonState);
+        emailInput.addEventListener('input', updateButtonState);
+        photoInput.addEventListener('change', updateButtonState);
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch('/super/add', {
+                method: 'POST',
+                body: formData
+            })
+            .then(
+              () => {
+                window.open("/super/employees", "_serRff")
+              }
+            )
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        });
+    });
+  </script>
+{% endblock %}

@@ -1,4 +1,4 @@
-function startCountdown(div, duration = 24 * 60 * 60 * 1000) {
+function startCountdown(div, duration = 60 * 60 * 1000) {
     let endTime = localStorage.getItem('endTime');
 
     if (!endTime) {
@@ -11,7 +11,7 @@ function startCountdown(div, duration = 24 * 60 * 60 * 1000) {
         const remainingTime = endTime - now;
 
         if (remainingTime <= 0) {
-            document.getElementById('countdown').textContent = 'Время вышло!';
+            document.getElementById('countdown').textContent = 'Cut down!';
             localStorage.removeItem('endTime');
             clearInterval(interval);
         } else {

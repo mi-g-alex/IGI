@@ -1,5 +1,7 @@
 import logging
+import math
 
+from django.http import HttpResponse
 import matplotlib.pyplot as plt
 import io
 import urllib, base64
@@ -14,10 +16,12 @@ from django.utils import timezone
 from datetime import timedelta
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core import serializers
+from django.db.models import Q
 
 from zoo.forms.animal_filter import AnimalFilterForm
 from zoo.forms.buy_ticket_form import TicketForm
 from zoo.forms.comment_form import CommentForm
+from zoo.forms.employee_form import EmployeeForm
 from zoo.forms.login_form import LoginForm
 from zoo.forms.registration_form import UserRegistrationForm
 
@@ -428,6 +432,34 @@ def super_user_employee(it_request, pk):
 
     return render(it_request, 'superuser/superuser_employee_item.html',
                   {"employee": employee, "age": joke_age, 'places': filtered.keys()})
+    
+@staff_member_required()
+def get_employees_filter(request):
+    sort = request.GET.get("sort")
+    if sort == None or (sort != "name" and sort != "-name" and sort != "phone" and sort != "-phone" and sort != "email" and sort != "-email" and sort != "info" and sort != "-info"):
+        sort = "pk"
+    
+    filter = request.GET.get("filter")
+    if filter == None:
+        filter = ""
+        
+    query = Q(name__icontains=filter) | Q(phone__icontains=filter) | \
+            Q(email__icontains=filter) | Q(info__icontains=filter)
+
+
+    allEmployees = Employee.objects.filter(query).order_by(sort)
+    
+    dataEmpl = serializers.serialize('json', allEmployees)
+    return HttpResponse(dataEmpl.__str__(), content_type='application/json')
+
+@staff_member_required()
+def add_empl(request): 
+    if(request.method == "GET"):
+        return render(request, 'superuser/create_user.html')
+    elif request.method == "POST":
+        form = EmployeeForm(request.POST, request.FILES)
+        form.save()
+        return HttpResponse()  
 
 
 @staff_member_required()
@@ -450,7 +482,6 @@ def chart_page(request):
     buf.seek(0)
     string = base64.b64encode(buf.read())
     uri = urllib.parse.quote(string)
-
     return render(request, 'superuser/chart_page.html', {'data': uri})
 
 def tmp(request):

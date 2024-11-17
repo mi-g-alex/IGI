@@ -19,4 +19,4 @@ class Employee(BaseModel):
     places = models.ManyToManyField(Place, related_query_name="employees", blank=True)
 
     def __str__(self):
-        return self.user.username + ' employee'
+        return self.name

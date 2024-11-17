@@ -5252,3 +5252,1241 @@ Visit index page
 Visit index page
 Visit index page
 Visit review page
+Watching for file changes with StatReloader
+Visit index page
+Visit review page
+Visit policy page
+Visit vacancy page
+Visit terms page
+Visit news page
+Visit about page
+Visit review page
+Visit review page
+Watching for file changes with StatReloader
+Visit vacancy page
+Visit policy page
+Visit news page
+Visit about page
+Visit policy page
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /super/employees/filter
+Not Found: /super/employees/filter
+Not Found: /super/employees/filter
+Not Found: /super/employees/filter
+Not Found: /super/employees/filter
+Not Found: /super/employees/filter
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /super/employees/filter
+Not Found: /super/employees/filter
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 438, in get_employees_filter
+    count = math.ceil(Employee.objects.count / 3)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+TypeError: unsupported operand type(s) for /: 'method' and 'int'
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 438, in get_employees_filter
+    count = math.ceil(Employee.objects.count / 3)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+TypeError: unsupported operand type(s) for /: 'method' and 'int'
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 440, in get_employees_filter
+    count = math.ceil(Employee.objects.count / 3)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+TypeError: unsupported operand type(s) for /: 'method' and 'int'
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 440, in get_employees_filter
+    count = math.ceil(Employee.objects.count / 3.0)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+TypeError: unsupported operand type(s) for /: 'method' and 'float'
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 440, in get_employees_filter
+    cnt = allEmployees.objects.count()
+          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'objects'
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_employees_filter() missing 3 required positional arguments: 'page', 'sort', and 'filter'
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 439, in get_employees_filter
+    print(page, sort, filter)
+          ^^^^
+NameError: name 'page' is not defined
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 440, in get_employees_filter
+    dataEmpl = serializers.serialize('json', allEmployees)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/serializers/__init__.py", line 134, in serialize
+    s.serialize(queryset, **options)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/serializers/base.py", line 109, in serialize
+    for count, obj in enumerate(queryset, start=1):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'method' object is not iterable
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 446, in get_employees_filter
+    data = serializers.serialize('json', dataStr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/serializers/__init__.py", line 134, in serialize
+    s.serialize(queryset, **options)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/serializers/base.py", line 113, in serialize
+    concrete_model = obj._meta.concrete_model
+                     ^^^^^^^^^
+AttributeError: 'str' object has no attribute '_meta'
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 445, in get_employees_filter
+    if filter == None:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'filter' where it is not associated with a value
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 445, in get_employees_filter
+    if filter == None:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'filter' where it is not associated with a value
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 449, in get_employees_filter
+    allEmployees = Employee.objects.filter(sinse=(page - 1) * 3)[:3]
+                                                  ~~~~~^~~
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 449, in get_employees_filter
+    allEmployees = Employee.objects.filter(sinse=(page - 1) * 3)[:3]
+                                                  ~~~~~^~~
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 448, in get_employees_filter
+    allEmployees = Employee.objects.filter(sinse=(page - 1) * 3)[:3]
+                                                  ~~~~~^~~
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 448, in get_employees_filter
+    allEmployees = Employee.objects.filter(sinse=(page - 1) * 3)[:3]
+                                                  ~~~~~^~~
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 448, in get_employees_filter
+    allEmployees = Employee.objects.filter(sinse=3)[:3]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'sinse' into field. Choices are: created_at, email, id, info, name, news, phone, photo, places, position, position_id, updated_at, user, user_id
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 448, in get_employees_filter
+    allEmployees = Employee.objects.filter(sinse=1)[:3]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'sinse' into field. Choices are: created_at, email, id, info, name, news, phone, photo, places, position, position_id, updated_at, user, user_id
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 448, in get_employees_filter
+    allEmployees = Employee.objects.filter(sinse=0)[:3]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'sinse' into field. Choices are: created_at, email, id, info, name, news, phone, photo, places, position, position_id, updated_at, user, user_id
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 449, in get_employees_filter
+    allEmployees = Employee.objects.filter(query)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1468, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'description' into field. Choices are: created_at, email, id, info, name, news, phone, photo, places, position, position_id, updated_at, user, user_id
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 449, in get_employees_filter
+    allEmployees = Employee.objects.filter(query).order_by(sort)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 2249, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'asdada' into field. Choices are: created_at, email, id, info, name, news, phone, photo, places, position, position_id, updated_at, user, user_id
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 449, in get_employees_filter
+    allEmployees = Employee.objects.filter(query).order_by(sort)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 2249, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '' into field. Choices are: created_at, email, id, info, name, news, phone, photo, places, position, position_id, updated_at, user, user_id
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 449, in get_employees_filter
+    allEmployees = Employee.objects.filter(query).order_by(sort)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 2249, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '' into field. Choices are: created_at, email, id, info, name, news, phone, photo, places, position, position_id, updated_at, user, user_id
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/filter
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 449, in get_employees_filter
+    allEmployees = Employee.objects.filter(query).order_by(sort)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 2249, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword ' ' into field. Choices are: created_at, email, id, info, name, news, phone, photo, places, position, position_id, updated_at, user, user_id
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /super/photos/news/IMG_20230917_214058.jpg
+Not Found: /super/photos/news/IMG_20220409_112114.jpg
+Not Found: /super/photos/news/IMG_20220409_112114.jpg
+Not Found: /super/photos/news/IMG_20230917_214058.jpg
+Not Found: /super/photos/news/IMG_20230917_214058.jpg
+Not Found: /super/photos/news/IMG_20220409_112114.jpg
+Not Found: /super/photos/news/IMG_20230917_214058.jpg
+Not Found: /super/photos/news/IMG_20220409_112114.jpg
+Not Found: /super/undefined
+Not Found: /super/undefined
+Not Found: /super/undefined
+Not Found: /super/undefined
+Not Found: /super/undefined
+Not Found: /super/undefined
+Not Found: /super/undefined
+Not Found: /super/photos/news/IMG_20220409_112114.jpg
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/add
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 456, in add_empl
+    return render(request, 'superuser/add_user.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: superuser/add_user.html
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/employees/add
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 456, in add_empl
+    return render(request, 'superuser/create_user.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    raise TemplateSyntaxError(error_msg)
+django.template.exceptions.TemplateSyntaxError: Invalid template name in 'extends' tag: ''. Got this from the 'base.html' variable.
+Not Found: /super/add
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/add
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 456, in add_empl
+    if(request.type == "GET"):
+       ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'type'
+Internal Server Error: /super/add
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 456, in add_empl
+    if(request.type == "GET"):
+       ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'type'
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden (CSRF token missing.): /super/add
+Forbidden (CSRF token missing.): /super/add
+Forbidden (CSRF token missing.): /super/add
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden (CSRF token missing.): /super/add
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden (CSRF token missing.): /super/add
+Internal Server Error: /super/add
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 460, in add_empl
+    redirect(":superuser_all_employees")
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: '' is not a registered namespace
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /super/add
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 460, in add_empl
+    return redirect(":superuser_all_employees")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: '' is not a registered namespace
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/zoo/employee/
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Employee has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/models/Employee.py", line 22, in __str__
+    return self.user.username + ' employee'
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'username'
+Internal Server Error: /admin/zoo/employee/
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Employee has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/models/Employee.py", line 22, in __str__
+    return self.user.username + ' employee'
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'username'
+Internal Server Error: /admin/zoo/employee/
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/db/models/options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Employee has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/models/Employee.py", line 22, in __str__
+    return self.user.username + ' employee'
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'username'
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/models/Employee.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/models/Employee.py changed, reloading.
+Watching for file changes with StatReloader
+Visit index page
+Internal Server Error: /super/add
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 461, in add_empl
+    form.save()
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/forms/models.py", line 545, in save
+    raise ValueError(
+ValueError: The Employee could not be created because the data didn't validate.
+Internal Server Error: /super/add
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 461, in add_empl
+    form.save()
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/forms/models.py", line 545, in save
+    raise ValueError(
+ValueError: The Employee could not be created because the data didn't validate.
+Internal Server Error: /super/add
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 461, in add_empl
+    form.save()
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/forms/models.py", line 545, in save
+    raise ValueError(
+ValueError: The Employee could not be created because the data didn't validate.
+Internal Server Error: /super/add
+Traceback (most recent call last):
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/zoo/views.py", line 461, in add_empl
+    form.save()
+  File "/Users/alex-gorgun/Desktop/Study/IGI/IGI/LR5/.env/lib/python3.12/site-packages/django/forms/models.py", line 545, in save
+    raise ValueError(
+ValueError: The Employee could not be created because the data didn't validate.
