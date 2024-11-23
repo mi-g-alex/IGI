@@ -2,6 +2,7 @@
 {% load static %}
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/animal_list.css' %}"/>
+    <script src="{% static "js/animalPaggination.js" %}"></script>
 {% endblock %}
 {% block content %}
     <style>
@@ -47,23 +48,24 @@
         <button type="submit">Filter</button>
     </form>
 
-
-    <div class="grid-container">
-        {% for animal in animals %}
-            <div class="animal-container">
-                <img src="{{ animal.photo.url }}" alt="{{ animal.name }}">
-                <div class="animal-details">
-                    <h2>{{ animal.name }}</h2>
-                    <p>Family: {{ animal.view.family.name }}</p>
-                    <p>Countries:
-                        {% for country in animal.counties.all %}
-                            {{ country.name }}{% if not forloop.last %}, {% endif %}
-                        {% endfor %}
-                    </p>
-                    <p>Facts: {{ animal.facts }}</p>
-                </div>
-            </div>
-        {% endfor %}
+    <div class="anim" style="display: static">
+        <div class="grid-container">
+        </div>
     </div>
+
+    <script>
+        let list = []
+        {% for animal in animals %}
+            let tmp{{animal.id}} = {}
+            tmp{{animal.id}}.url = "{{ animal.photo.url }}"
+            tmp{{animal.id}}.name = "{{ animal.name }}"
+            tmp{{animal.id}}.family = "{{ animal.view.family.name }}"
+            tmp{{animal.id}}.countries = "{% for country in animal.counties.all %}{{ country.name }}{% if not forloop.last %}, {% endif %}{% endfor %}"
+            tmp{{animal.id}}.facts = "{{ animal.facts }}"
+            list.push(tmp{{animal.id}})
+        {% endfor %}
+
+        new AnimalPaggination(list, document.querySelector('.anim'))
+    </script>
 
 {% endblock %}

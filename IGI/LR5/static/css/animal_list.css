@@ -1,12 +1,15 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* задает три столбца одинаковой ширины */
+    grid-template-columns: repeat(3, 1fr);
+    /* задает три столбца одинаковой ширины */
     gap: 20px;
     max-width: 1200px;
     width: 100%;
 }
 
 .grid-container .animal-container {
+    --rotateX: 0;
+    --rotateY: 0;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -14,7 +17,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 200px; /* минимальная ширина для каждой карточки животного */
+    min-width: 200px;
+    /* минимальная ширина для каждой карточки животного */
+    transform:
+        perspective(100em) translatez(0em) rotateY(var(--rotateX)) rotateX(var(--rotateY));
 }
 
 .grid-container img {
@@ -61,7 +67,8 @@
     margin-bottom: 5px;
 }
 
-.filter-form input, select {
+.filter-form input,
+select {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -84,4 +91,3 @@
 .filter-form button[type="submit"]:hover {
     background-color: #bbcc00;
 }
-
