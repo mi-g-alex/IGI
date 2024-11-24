@@ -62,7 +62,7 @@ class AnimalPaggination {
                 cont.style.setProperty("--rotateY", -1 * offsetY + "deg");
             });
 
-            cont.addEventListener('mouseleave', function () {
+            elem.addEventListener('mouseleave', function () {
                 cont.style.setProperty("--rotateX", 0 + "deg");
                 cont.style.setProperty("--rotateY", 0 + "deg");
             });
