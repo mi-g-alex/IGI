@@ -57,6 +57,14 @@
 {% endblock %}
 <main>
     {% block content %}{% endblock %}
+    <div id="age-prompt" class="modal">
+        <div class="modal-content">
+            <h2>Enter Your Date of Birth</h2>
+            <input type="date" id="dob" />
+            <button onclick="submitDOB()">Submit</button>
+        </div>
+    </div>
+    <div id="message" class="message"></div>
 </main>
 {% load my_calendar %}
 {% block footer %}
@@ -73,6 +81,7 @@
             </div>
         {% endautoescape %}
     </footer>
+    <script src="{% static 'js/checkBOD.js' %}"></script>
     <script>
         startCountdown(document.querySelector('.timer'))
     </script>
