@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Субстанции</title>
+</head>
+<body>
+
+<form id="substanceForm">
+    <label for="name">Название:</label>
+    <input type="text" name="name" id="name"><br>
+    <label for="weight">Удельный вес:</label>
+    <input type="number" name="weight" id="weight" step="any"><br>
+    <label for="conductivity">Проводимость:</label>
+    <select name="conductivity" id="conductivity">
+        <option value="проводник">Проводник</option>
+        <option value="полупроводник">Полупроводник</option>
+        <option value="диэлектрик">Диэлектрик</option>
+    </select><br>
+    <button type="button" onclick="addSubstance()">Добавить вещество</button>
+</form>
+
+<h3>Все вещества:</h3>
+<div id="allSubstancesOutput"></div>
+
+<button type="button" onclick="displaySemiconductors()">Показать полупроводники</button>
+
+<h3>Полупроводники:</h3>
+<div id="resultOutput"></div>
+
+<script>
+function Substance(name, weight) {
+    this.name = name || '';
+    this.weight = weight || 0;
+}
+
+Substance.prototype.getName = function() {
+    return this.name;
+};
+Substance.prototype.setName = function(name) {
+    this.name = name;
+};
+Substance.prototype.getWeight = function() {
+    return this.weight;
+};
+Substance.prototype.setWeight = function(weight) {
+    this.weight = weight;
+};
+
+Substance.prototype.addSubstanceFromForm = function(form) {
+    this.name = form.elements['name'].value;
+    this.weight = parseFloat(form.elements['weight'].value);
+};
+
+Substance.displayAllSubstances = function(array) {
+    var output = '';
+    for(var i=0; i<array.length; i++) {
+        output += 'Название: ' + array[i].getName() + ', Удельный вес: ' + array[i].getWeight() + '<br>';
+    }
+    document.getElementById('allSubstancesOutput').innerHTML = output;
+};
+
+function ConductiveSubstance(name, weight, conductivity) {
+    Substance.call(this, name, weight);
+    this.conductivity = conductivity || '';
+}
+
+ConductiveSubstance.prototype = Object.create(Substance.prototype);
+ConductiveSubstance.prototype.constructor = ConductiveSubstance;
+
+ConductiveSubstance.prototype.getConductivity = function() {
+    return this.conductivity;
+};
+ConductiveSubstance.prototype.setConductivity = function(conductivity) {
+    this.conductivity = conductivity;
+};
+
+ConductiveSubstance.prototype.addSubstanceFromForm = function(form) {
+    this.name = form.elements['name'].value;
+    this.weight = parseFloat(form.elements['weight'].value);
+    this.conductivity = form.elements['conductivity'].value;
+};
+
+ConductiveSubstance.displayAllSubstances = function(array) {
+    var output = '';
+    for(var i=0; i<array.length; i++) {
+        output += 'Название: ' + array[i].getName() + ', Удельный вес: ' + array[i].getWeight() + ', Проводимость: ' + array[i].getConductivity() + '<br>';
+    }
+    document.getElementById('allSubstancesOutput').innerHTML = output;
+};
+
+ConductiveSubstance.displayResult = function(array) {
+    var output = '';
+    for(var i=0; i<array.length; i++) {
+        if(array[i].getConductivity() === 'полупроводник') {
+            output += 'Название: ' + array[i].getName() + ', Удельный вес: ' + array[i].getWeight() + '<br>';
+        }
+    }
+    document.getElementById('resultOutput').innerHTML = output;
+};
+
+var substances = [];
+
+function addSubstance() {
+    var form = document.getElementById('substanceForm');
+    var newSubstance = new ConductiveSubstance();
+    newSubstance.addSubstanceFromForm(form);
+    substances.push(newSubstance);
+
+    ConductiveSubstance.displayAllSubstances(substances);
+}
+
+function displaySemiconductors() {
+    ConductiveSubstance.displayResult(substances);
+}
+</script>
+
+</body>
+</html>
