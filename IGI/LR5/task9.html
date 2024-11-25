@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart.js Arcsin Graph</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #chart-container {
+            width: 80%;
+            height: 80vh;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="chart-container">
+    <canvas id="myChart"></canvas>
+</div>
+<button id="saveButton" disabled>Save Chart</button>
+
+<script>
+    function taylorArcsin(x, terms = 10) {
+        let sum = 0;
+        for (let n = 0; n < terms; n++) {
+            let numerator = factorial(2 * n);
+            let denominator = Math.pow(4, n) * Math.pow(factorial(n), 2) * (2 * n + 1);
+            sum += (numerator / denominator) * Math.pow(x, 2 * n + 1);
+        }
+        return sum;
+    }
+
+    function factorial(n) {
+        return n ? n * factorial(n - 1) : 1;
+    }
+
+    const xValues = [];
+    const seriesValues = [];
+    const functionValues = [];
+
+    for (let x = -1; x <= 1; x += 0.01) {
+        xValues.push(x);
+    }
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+    let myChart
+
+    function draw() {
+        if(myChart != undefined) myChart.destroy()
+        myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: xValues,
+                datasets: [
+                
+                    {
+                        label: 'Taylor Series Approximation',
+                        data: seriesValues,
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 2,
+                        fill: false,
+                    },
+                    {
+                        label: 'Math.asin Function',
+                        data: functionValues,
+                        borderColor: 'rgba(153, 102, 255, 1)',
+                        borderWidth: 2,
+                        fill: false,
+
+                    }
+                ]
+            },
+            options: {
+                animation: {
+                    duration: 0 
+                },   
+                responsive: true,
+    
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'X Axis'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Y Axis',
+                        },
+                        beginAtZero: false, // Нам нужно установить минимальное значение вручную
+                        min: -2, // Минимальное значение на оси Y
+                        max: 2,  // Максимальное значение на оси Y
+                        ticks: {
+                            stepSize: 0.1 // Шаг между значениями на оси Y
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    },
+                    title: {
+                        display: true,
+                        text: 'Comparison of Taylor Series and Math Function for Arcsin'
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
+                    }
+                }
+            }
+        });
+    }
+
+    let x = -1;
+
+    let id = setInterval(() => {
+        draw();
+        if(x <= 1) {
+            seriesValues.push(taylorArcsin(x));
+            functionValues.push(Math.asin(x));
+            x += 0.01;
+        } else {
+            document.getElementById('saveButton').removeAttribute("disabled")
+            clearInterval(id)
+        }
+    }, 2)
+
+    // Сохранение графика в изображение
+    document.getElementById('saveButton').addEventListener('click', () => {
+        const link = document.createElement('a');
+        link.download = 'chart.png';
+        link.href = myChart.toBase64Image();
+        link.click();
+    });
+    
+</script>
+
+</body>
+</html>
